@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Jordan Wu`,
     siteUrl: `https://jordanspencerwu.github.io/`,
-    description: `Jordan Wu Website`
+    description: `Jordan Wu`,
+    author: `Jordan Wu`,
   },
   plugins: [
     `gatsby-plugin-less`,
@@ -19,6 +20,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-typography`,
