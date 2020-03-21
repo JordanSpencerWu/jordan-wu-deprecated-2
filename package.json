@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-typescript": "^2.3.0",
+    "normalize.css": "^8.0.1",
     "prettier": "^1.19.1"
   },
   "repository": {
