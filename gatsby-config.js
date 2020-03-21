@@ -6,7 +6,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-less`,
-    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,6 +18,8 @@ module.exports = {
         icon: `src/images/icon.png`,
       },
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-typescript`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

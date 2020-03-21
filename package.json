@@ -21,6 +21,7 @@
   "devDependencies": {
     "gatsby-plugin-less": "^3.1.0",
     "gatsby-plugin-manifest": "^2.3.1",
+    "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-typescript": "^2.3.0",
     "gatsby-plugin-typography": "^2.4.0",
     "less": "^3.11.1",
