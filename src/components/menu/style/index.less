@@ -1,11 +1,12 @@
 @import "../../style/index";
 
 @menu-margin: 30px;
+@menu-height: 64px;
 
 .github-icon {
   fill: @white;
-  width: 22px;
   margin-left: -10px;
+  width: 22px;
 }
 
 .menu {
@@ -16,16 +17,24 @@
     color: @text-color;
     display: flex;
     flex-flow: nowrap;
-    height: 64px;
+    height: @menu-height;
   }
 
-  &-navigation-container {
+  &-item-container {
     align-items: center;
     display: flex;
     flex-grow: 1;
     flex-wrap: nowrap;
+    height: 100%;
     justify-content: flex-end;
     margin-right: @menu-margin;
+    text-transform: capitalize;
+  }
+
+  &-link-container {
+    align-items: center;
+    display: flex;
+    height: 100%;
   }
 
   &-logo {
@@ -41,7 +50,16 @@
   }
 
   &-item-link {
-    .menu-link;
+    background-image: none;
+    color: @text-color;
+    font-size: 18px;
+    height: 100%;
+    line-height: @menu-height;
+    padding: 0 20px;
     text-shadow: none;
+
+    &:hover:last-child {
+      background-color: shade(@primary-color, 30%);
+    }
   }
 }

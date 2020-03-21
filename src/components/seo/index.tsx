@@ -13,7 +13,7 @@ type SEOProps = {
 }
 
 function SEO(props: SEOProps) {
-  const site = useSiteMetadata()
+  const siteMetadata = useSiteMetadata()
   const {
     description,
     lang,
@@ -21,7 +21,7 @@ function SEO(props: SEOProps) {
     title
   } = props
 
-  const metaDescription = description || site.description
+  const metaDescription = description || siteMetadata.description
 
   return (
     <Helmet
@@ -52,7 +52,7 @@ function SEO(props: SEOProps) {
         },
         {
           name: `twitter:creator`,
-          content: site.author,
+          content: siteMetadata.author,
         },
         {
           name: `twitter:title`,

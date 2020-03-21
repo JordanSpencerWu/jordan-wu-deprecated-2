@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Jordan Wu`,
-    siteUrl: `https://jordanspencerwu.github.io/`,
-    description: `Jordan Wu`,
     author: `Jordan Wu`,
+    description: `Jordan Wu`,
+    githubUrl: `https://github.com/JordanSpencerWu`,
+    siteUrl: `https://jordanspencerwu.github.io/`,
+    title: `Jordan Wu`,
   },
   plugins: [
     `gatsby-plugin-less`,
@@ -35,6 +36,13 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
   ],
 }
