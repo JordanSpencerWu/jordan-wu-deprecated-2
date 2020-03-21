@@ -1,0 +1,47 @@
+@import "../../style/index";
+
+@menu-margin: 30px;
+
+.github-icon {
+  fill: @white;
+  width: 22px;
+  margin-left: -10px;
+}
+
+.menu {
+  &-container {
+    align-items: center;
+    background-color: @menu-color;
+    box-shadow: @box-shadow;
+    color: @text-color;
+    display: flex;
+    flex-flow: nowrap;
+    height: 64px;
+  }
+
+  &-navigation-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-right: @menu-margin;
+  }
+
+  &-logo {
+    font-size: larger;
+    margin-left: @menu-margin;
+  }
+
+  &-link {
+    background-image: none;
+    color: @text-color;
+    font-size: 18px;
+    text-shadow: none;
+  }
+
+  &-item-link {
+    .menu-link;
+    text-shadow: none;
+  }
+}

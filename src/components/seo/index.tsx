@@ -23,15 +23,12 @@ function SEO(props: SEOProps) {
 
   const metaDescription = description || site.description
 
-  console.log(props)
-
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.title}`}
       meta={[
         {
           name: `description`,
