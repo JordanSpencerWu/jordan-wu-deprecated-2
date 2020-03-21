@@ -1,6 +1,6 @@
 import React from "react"
 
-import Menu from "../menu"
+import TopNav from "../top-nav"
 
 type LayoutProps = {
   children: Array<React.ReactNode>
@@ -9,7 +9,7 @@ type LayoutProps = {
 function Layout(props: LayoutProps) {
   return (
     <>
-      <Menu/>
+      <TopNav />
       {props.children}
     </>
   )
