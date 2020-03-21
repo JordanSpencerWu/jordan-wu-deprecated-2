@@ -1,13 +1,6 @@
 @import "../../style/index";
 
-@menu-margin: 30px;
 @menu-height: 64px;
-
-.github-icon {
-  fill: @white;
-  margin-left: -10px;
-  width: 22px;
-}
 
 .menu {
   &-container {
@@ -18,6 +11,7 @@
     display: flex;
     flex-flow: nowrap;
     height: @menu-height;
+    padding: 0 30px;
   }
 
   &-item-container {
@@ -27,7 +21,6 @@
     flex-wrap: nowrap;
     height: 100%;
     justify-content: flex-end;
-    margin-right: @menu-margin;
     text-transform: capitalize;
   }
 
@@ -39,13 +32,13 @@
 
   &-logo {
     font-size: larger;
-    margin-left: @menu-margin;
   }
 
-  &-link {
+  &-item-logo-link {
     background-image: none;
     color: @text-color;
     font-size: 18px;
+    padding: 20px 18px;
     text-shadow: none;
   }
 
@@ -58,8 +51,36 @@
     padding: 0 20px;
     text-shadow: none;
 
+    &:not(:last-child) {
+      padding-right: 0;
+      padding-left: 20px;
+    }
+
     &:hover:last-child {
       background-color: shade(@primary-color, 30%);
+    }
+  }
+
+  &-github-icon-link {
+    background-image: none;
+    color: @text-color;
+    font-size: 18px;
+    padding: 20px 18px;
+    text-shadow: none;
+    right: 0;
+    position: absolute;
+  }
+
+  &-github-icon {
+    fill: @white;
+    width: 22px;
+  }
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      &-container {
+        justify-content: center;
+      }
     }
   }
 }

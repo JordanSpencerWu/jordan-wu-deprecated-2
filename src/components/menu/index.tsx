@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo } from "react"
 import { Link } from "gatsby"
 
 import MenuLink from "./menu-link"
@@ -16,40 +16,52 @@ function Menu(props: MenuProps) {
 
   const menuLinks = pageNames.map(pageName => {
     const { name, linkTo } = getMenuLink(pageName)
-    
+
     if (!name) return null;
     
-    return <MenuLink name={name} linkTo={linkTo} />
+    return <MenuLink key={name} name={name} linkTo={linkTo} />
   })
 
+  const githubMenuLink = (
+    <>
+      <a
+        className="menu-item-link"
+        href={githubUrl}
+        target="_blank"
+      >
+        Github
+      </a>
+      <a
+        className="menu-item-logo-link"
+        href={githubUrl}
+        target="_blank"
+      >
+        <GithubIcon className="menu-github-icon" />
+      </a>
+    </>
+  )
+
+  const mobileGithubIcon = (
+    <a
+      className="menu-github-icon-link show-on-screen-sm"
+      href={githubUrl}
+      target="_blank"
+    >
+      <GithubIcon className="menu-github-icon" />
+    </a>
+  )
+
   return (
-    <div className="menu-container">
-      <Link className="menu-link" to="/">
+    <nav className="menu-container">
+      <Link className="menu-item-logo-link" to="/">
         <span className="menu-logo">Jordan Wu</span>
       </Link>
-      <div className="menu-item-container">
-        {menuLinks.reverse()}
-        {
-          githubUrl &&
-          <>
-            <a
-              className="menu-item-link"
-              href={githubUrl}
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              className="menu-link"
-              href={githubUrl}
-              target="_blank"
-            >
-              <GithubIcon className="github-icon" />
-            </a>
-          </>
-        }
+      <div className="menu-item-container hide-on-screen-sm">
+        { menuLinks.reverse() }
+        { githubUrl && githubMenuLink }
       </div>
-    </div>
+      { mobileGithubIcon }
+    </nav>
   )
 }
 
@@ -60,13 +72,12 @@ type MenuLink = {
 
 function getMenuLink(pageName: string) : MenuLink {
   if (pageName == '404') return {}
-
-  const name = pageName == "index" ? "home" : pageName.replace(/-/g, " ")
+  if (pageName == "index") return {name: "home", linkTo: "/"}
 
   return {
-    name,
+    name: pageName.replace(/-/g, " "),
     linkTo: `/${pageName}`
   }
 }
 
-export default Menu
+export default memo(Menu)
