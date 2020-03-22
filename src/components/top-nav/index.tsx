@@ -1,25 +1,31 @@
 import React, { memo, ReactElement } from "react"
 import { Link } from "gatsby"
 
-import TopNavLink from "./top-nav-link"
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
-import { usePageNames } from "../../hooks/use-page-names"
+import { useNavLinks } from "../../hooks/use-nav-links"
 import "./style/index.less"
 
 const GithubIcon = require("../../images/github.svg")
 
-type TopNavProps = {}
+type TopNavProps = {
+  currentPath: string
+}
 
 function TopNav(props: TopNavProps): ReactElement {
+  const { currentPath } = props
   const { githubUrl } = useSiteMetadata()
-  const pageNames = usePageNames()
+  const navLinks = useNavLinks()
 
-  const menuLinks = pageNames.map(pageName => {
-    const { name, linkTo } = getMenuLink(pageName)
+  const menuLinks = navLinks.map(navLink => {
+    const { name, linkTo } = navLink
 
-    if (name == undefined) return null
-
-    return <TopNavLink key={name} name={name} linkTo={linkTo} />
+    return (
+      <div className="top-nav-link-container">
+        <Link className="top-nav-item-link" to={linkTo}>
+          {name}
+        </Link>
+      </div>
+    )
   })
 
   const githubMenuLink = (
@@ -55,21 +61,6 @@ function TopNav(props: TopNavProps): ReactElement {
       {mobileGithubIcon}
     </nav>
   )
-}
-
-type TopNavLink = {
-  name?: string
-  linkTo?: string
-}
-
-function getMenuLink(pageName: string): TopNavLink {
-  if (pageName == "404") return {}
-  if (pageName == "index") return { name: "home", linkTo: "/" }
-
-  return {
-    name: pageName.replace(/-/g, " "),
-    linkTo: `/${pageName}`,
-  }
 }
 
 export default memo(TopNav)

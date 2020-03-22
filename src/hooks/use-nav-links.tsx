@@ -1,0 +1,62 @@
+import { useStaticQuery, graphql } from "gatsby"
+import { FileSystemNode } from "gatsby-source-filesystem"
+
+const MENU_LINKS_ORDER = [
+  "home",
+  "blog",
+  "book-list",
+  "music-playlist",
+  "resume",
+]
+
+export type NavLinkProps = {
+  name?: string
+  linkTo?: string
+}
+
+export const useNavLinks = (): Array<NavLinkProps> => {
+  const {
+    allFile: { edges },
+  } = useStaticQuery(
+    graphql`
+      query {
+        allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
+          edges {
+            node {
+              name
+            }
+          }
+        }
+      }
+    `
+  )
+
+  const navLinks = edges
+    .map(getPageName)
+    .sort(comparePageNames)
+    .map(getNavLink)
+    .filter(Boolean)
+
+  return navLinks
+}
+
+function getPageName(edge: Record<string, FileSystemNode>): string {
+  return edge.node.name
+}
+
+function comparePageNames(a: string, b: string): number {
+  const compareA = MENU_LINKS_ORDER.indexOf(a) || 100
+  const compareB = MENU_LINKS_ORDER.indexOf(b) || 100
+
+  return compareA - compareB
+}
+
+function getNavLink(pageName: string): NavLinkProps | null {
+  if (pageName == "404") return null
+  if (pageName == "index") return { name: "home", linkTo: "/" }
+
+  return {
+    name: pageName.replace(/-/g, " "),
+    linkTo: `/${pageName}`,
+  }
+}
