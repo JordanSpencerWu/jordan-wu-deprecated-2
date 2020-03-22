@@ -9,26 +9,18 @@ import "./style/index.less"
 const GithubIcon = require("../../images/github.svg")
 
 type TopNavProps = {}
-const MENU_LINKS_ORDER = ["home", "blog", "book-list", "resume"]
 
 function TopNav(props: TopNavProps): ReactElement {
   const { githubUrl } = useSiteMetadata()
   const pageNames = usePageNames()
 
-  const menuLinks = pageNames
-    .sort((a, b) => {
-      const compareA = MENU_LINKS_ORDER.indexOf(a) || 100
-      const compareB = MENU_LINKS_ORDER.indexOf(b) || 100
+  const menuLinks = pageNames.map(pageName => {
+    const { name, linkTo } = getMenuLink(pageName)
 
-      return compareA - compareB
-    })
-    .map(pageName => {
-      const { name, linkTo } = getMenuLink(pageName)
+    if (name == undefined) return null
 
-      if (name == undefined) return null
-
-      return <TopNavLink key={name} name={name} linkTo={linkTo} />
-    })
+    return <TopNavLink key={name} name={name} linkTo={linkTo} />
+  })
 
   const githubMenuLink = (
     <>
@@ -36,18 +28,18 @@ function TopNav(props: TopNavProps): ReactElement {
         Github
       </a>
       <a className="top-nav-item-logo-link" href={githubUrl} target="_blank">
-        <GithubIcon className="top-nav-github-icon" />
+        <GithubIcon className="top-nav-icon" />
       </a>
     </>
   )
 
   const mobileGithubIcon = (
     <a
-      className="top-nav-github-icon-link show-on-screen-sm"
+      className="top-nav-icon-link show-on-screen-sm"
       href={githubUrl}
       target="_blank"
     >
-      <GithubIcon className="top-nav-github-icon" />
+      <GithubIcon className="top-nav-icon" />
     </a>
   )
 

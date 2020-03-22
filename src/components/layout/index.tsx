@@ -1,7 +1,8 @@
 import React, { memo, ReactElement } from "react"
 
-import TopNav from "../top-nav"
+import BottomNav from "../bottom-nav"
 import Footer from "../footer"
+import TopNav from "../top-nav"
 import "./style/index.less"
 
 type LayoutProps = {
@@ -18,6 +19,7 @@ function Layout(props: LayoutProps): ReactElement {
       </header>
       <main>{children}</main>
       <footer>
+        <BottomNav />
         <Footer />
       </footer>
     </div>

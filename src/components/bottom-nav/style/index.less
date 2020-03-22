@@ -1,0 +1,38 @@
+@import "../../style/index";
+
+@nav-bottom-height: 65px;
+@nav-bottom-icon-size: 24px;
+
+.bottom-nav {
+  &-container {
+    justify-content: space-between;
+    background-color: rgba(19, 18, 23, 0.975);
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: @text-color;
+    display: flex;
+    height: @nav-bottom-height;
+    padding: 0 10px;
+    z-index: 5;
+  }
+
+  &-icon {
+    fill: @white;
+    width: @nav-bottom-icon-size;
+    height: @nav-bottom-icon-size;
+  }
+
+  &-link {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 64px;
+    height: 64px;
+    background-image: none;
+    color: @text-color;
+    font-size: 18px;
+    text-shadow: none;
+  }
+}
