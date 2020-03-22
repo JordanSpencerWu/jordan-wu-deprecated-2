@@ -9,18 +9,26 @@ import "./style/index.less"
 const GithubIcon = require("../../images/github.svg")
 
 type TopNavProps = {}
+const MENU_LINKS_ORDER = ["home", "blog", "book-list", "resume"]
 
 function TopNav(props: TopNavProps): ReactElement {
   const { githubUrl } = useSiteMetadata()
   const pageNames = usePageNames()
 
-  const menuLinks = pageNames.map(pageName => {
-    const { name, linkTo } = getMenuLink(pageName)
+  const menuLinks = pageNames
+    .sort((a, b) => {
+      const compareA = MENU_LINKS_ORDER.indexOf(a) || 100
+      const compareB = MENU_LINKS_ORDER.indexOf(b) || 100
 
-    if (!name) return null
+      return compareA - compareB
+    })
+    .map(pageName => {
+      const { name, linkTo } = getMenuLink(pageName)
 
-    return <TopNavLink key={name} name={name} linkTo={linkTo} />
-  })
+      if (name == undefined) return null
+
+      return <TopNavLink key={name} name={name} linkTo={linkTo} />
+    })
 
   const githubMenuLink = (
     <>
@@ -49,7 +57,7 @@ function TopNav(props: TopNavProps): ReactElement {
         <span className="top-nav-logo">Jordan Wu</span>
       </Link>
       <div className="top-nav-item-container hide-on-screen-sm">
-        {menuLinks.reverse()}
+        {menuLinks}
         {githubUrl && githubMenuLink}
       </div>
       {mobileGithubIcon}
