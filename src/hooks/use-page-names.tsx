@@ -1,7 +1,13 @@
 import { useStaticQuery, graphql } from "gatsby"
 import { FileSystemNode } from "gatsby-source-filesystem"
 
-const MENU_LINKS_ORDER = ["home", "blog", "book-list", "resume"]
+const MENU_LINKS_ORDER = [
+  "home",
+  "blog",
+  "book-list",
+  "music-playlist",
+  "resume",
+]
 
 export const usePageNames = (): Array<string> => {
   const {
