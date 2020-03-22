@@ -3,6 +3,7 @@ module.exports = {
     author: `Jordan Wu`,
     description: `Jordan Wu`,
     githubUrl: `https://github.com/JordanSpencerWu`,
+    linkedinUrl: `https://www.linkedin.com/in/jordanswu/`,
     siteUrl: `https://jordanspencerwu.github.io/`,
     title: `Jordan Wu`,
   },
@@ -23,12 +24,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images/
-        }
-      }
+          include: /images/,
+        },
+      },
     },
     `gatsby-plugin-typescript`,
     {

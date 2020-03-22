@@ -1,0 +1,55 @@
+@import "../../style/index";
+
+.footer {
+  &-container {
+    align-items: center;
+    justify-content: space-between;
+    background-color: @nav-color;
+    color: @text-color;
+    display: flex;
+    padding: 30px @site-horizontal-padding;
+
+    & > p {
+      font-size: 16px;
+      font-weight: 200;
+      margin: 0;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+
+    @media screen {
+      @media (max-width: @screen-md) {
+        & > p {
+          width: 215px;
+        }
+      }
+    }
+  }
+
+  &-social-media-container {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    width: 100%;
+
+    & a {
+      background-image: none;
+      color: @text-color;
+      font-size: 18px;
+      text-shadow: none;
+      padding: 8px;
+      margin: 0 4px;
+    }
+
+    & svg {
+      fill: @text-color;
+      height: 40px;
+
+      &:hover {
+        fill: shade(@text-color, 30%);
+      }
+    }
+  }
+}

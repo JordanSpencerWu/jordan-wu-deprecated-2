@@ -1,4 +1,4 @@
-import React from "react"
+import React, { memo, ReactElement } from "react"
 import { Link } from "gatsby"
 
 type TopNavLinkProps = {
@@ -6,7 +6,7 @@ type TopNavLinkProps = {
   linkTo: string
 }
 
-function MenuLink(props: TopNavLinkProps) {
+function MenuLink(props: TopNavLinkProps): ReactElement {
   const { name, linkTo } = props
 
   return (
@@ -18,4 +18,4 @@ function MenuLink(props: TopNavLinkProps) {
   )
 }
 
-export default MenuLink
+export default memo(MenuLink)

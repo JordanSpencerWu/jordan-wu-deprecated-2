@@ -1,4 +1,4 @@
-import React, { memo } from "react"
+import React, { memo, ReactElement } from "react"
 import { Link } from "gatsby"
 
 import TopNavLink from "./top-nav-link"
@@ -10,7 +10,7 @@ const GithubIcon = require("../../images/github.svg")
 
 type TopNavProps = {}
 
-function TopNav(props: TopNavProps) {
+function TopNav(props: TopNavProps): ReactElement {
   const { githubUrl } = useSiteMetadata()
   const pageNames = usePageNames()
 

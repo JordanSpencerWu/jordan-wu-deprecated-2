@@ -1,25 +1,20 @@
-import React from "react"
+import React, { memo, ReactElement } from "react"
 import Helmet from "react-helmet"
 
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
 
-type MetaProps = JSX.IntrinsicElements['meta'];
+type MetaProps = JSX.IntrinsicElements["meta"]
 
 type SEOProps = {
-  description?: string,
-  lang?: `en`,
-  meta?: Array<MetaProps>,
-  title: string,
+  description?: string
+  lang?: `en`
+  meta?: Array<MetaProps>
+  title: string
 }
 
-function SEO(props: SEOProps) {
+function SEO(props: SEOProps): ReactElement {
   const siteMetadata = useSiteMetadata()
-  const {
-    description,
-    lang,
-    meta,
-    title
-  } = props
+  const { description, lang, meta, title } = props
 
   const metaDescription = description || siteMetadata.description
 
@@ -62,7 +57,7 @@ function SEO(props: SEOProps) {
           name: `twitter:description`,
           content: metaDescription,
         },
-        ...meta
+        ...meta,
       ]}
     />
   )
@@ -74,4 +69,4 @@ SEO.defaultProps = {
   meta: [],
 } as Partial<SEOProps>
 
-export default SEO
+export default memo(SEO)

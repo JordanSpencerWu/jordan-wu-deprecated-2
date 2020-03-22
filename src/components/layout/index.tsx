@@ -1,18 +1,27 @@
-import React from "react"
+import React, { memo, ReactElement } from "react"
 
 import TopNav from "../top-nav"
+import Footer from "../footer"
+import "./style/index.less"
 
 type LayoutProps = {
-  children: Array<React.ReactNode>
+  children: Array<React.ReactElement>
 }
 
-function Layout(props: LayoutProps) {
+function Layout(props: LayoutProps): ReactElement {
+  const { children } = props
+
   return (
-    <>
-      <TopNav />
-      {props.children}
-    </>
+    <div className="layout-container">
+      <header>
+        <TopNav />
+      </header>
+      <main>{children}</main>
+      <footer>
+        <Footer />
+      </footer>
+    </div>
   )
 }
 
-export default Layout
+export default memo(Layout)
