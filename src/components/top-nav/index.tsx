@@ -1,5 +1,6 @@
 import React, { memo, ReactElement } from "react"
 import { Link } from "gatsby"
+import { LinkGetProps } from "@reach/router"
 
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
 import { useNavLinks } from "../../hooks/use-nav-links"
@@ -7,12 +8,9 @@ import "./style/index.less"
 
 const GithubIcon = require("../../images/github.svg")
 
-type TopNavProps = {
-  currentPath: string
-}
+type TopNavProps = {}
 
 function TopNav(props: TopNavProps): ReactElement {
-  const { currentPath } = props
   const { githubUrl } = useSiteMetadata()
   const navLinks = useNavLinks()
 
@@ -20,8 +18,8 @@ function TopNav(props: TopNavProps): ReactElement {
     const { name, linkTo } = navLink
 
     return (
-      <div className="top-nav-link-container">
-        <Link className="top-nav-item-link" to={linkTo}>
+      <div key={name} className="top-nav-link-container">
+        <Link getProps={addClassName} to={linkTo}>
           {name}
         </Link>
       </div>
@@ -61,6 +59,14 @@ function TopNav(props: TopNavProps): ReactElement {
       {mobileGithubIcon}
     </nav>
   )
+}
+
+function addClassName(props: LinkGetProps): object {
+  const { isCurrent } = props
+
+  return isCurrent
+    ? { className: "top-nav-item-link active" }
+    : { className: "top-nav-item-link" }
 }
 
 export default memo(TopNav)

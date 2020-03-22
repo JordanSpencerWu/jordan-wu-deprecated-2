@@ -1,5 +1,6 @@
 import React, { memo, ReactElement } from "react"
 import { Link } from "gatsby"
+import { LinkGetProps } from "@reach/router"
 
 import { NavLinkProps, useNavLinks } from "../../hooks/use-nav-links"
 import "./style/index.less"
@@ -10,19 +11,16 @@ const HomeIcon = require("../../images/home.svg")
 const ResumeIcon = require("../../images/resume.svg")
 const MusicPlaylistIcon = require("../../images/music-playlist.svg")
 
-type BottomNavProps = {
-  currentPath: string
-}
+type BottomNavProps = {}
 
 function BottomNav(props: BottomNavProps): ReactElement {
   const navLinks = useNavLinks()
 
   const bottomNavLinks = navLinks.map(getBottomNavLink).map(bottomNavLink => {
-    console.log(bottomNavLink)
     const { name, linkTo, icon } = bottomNavLink
 
     return (
-      <Link key={name} className="bottom-nav-link" to={linkTo}>
+      <Link key={name} getProps={addClassName} to={linkTo}>
         {icon}
         <small>{name}</small>
       </Link>
@@ -78,6 +76,14 @@ function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
     linkTo,
     icon,
   }
+}
+
+function addClassName(props: LinkGetProps): object {
+  const { isCurrent } = props
+
+  return isCurrent
+    ? { className: "bottom-nav-link active" }
+    : { className: "bottom-nav-link" }
 }
 
 export default memo(BottomNav)

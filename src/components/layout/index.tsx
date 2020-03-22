@@ -7,20 +7,19 @@ import "./style/index.less"
 
 type LayoutProps = {
   children: Array<React.ReactElement>
-  currentPath: string
 }
 
 function Layout(props: LayoutProps): ReactElement {
-  const { children, currentPath } = props
+  const { children } = props
 
   return (
     <div className="layout-container">
       <header>
-        <TopNav currentPath={currentPath} />
+        <TopNav />
       </header>
       <main>{children}</main>
       <footer>
-        <BottomNav currentPath={currentPath} />
+        <BottomNav />
         <Footer />
       </footer>
     </div>

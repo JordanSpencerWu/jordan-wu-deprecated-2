@@ -59,6 +59,12 @@
     &:hover:last-child {
       background-color: shade(@primary-color, 30%);
     }
+
+    &.active {
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      color: @active-nav-color;
+    }
   }
 
   &-icon-link {

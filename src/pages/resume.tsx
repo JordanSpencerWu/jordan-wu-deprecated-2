@@ -1,16 +1,11 @@
-import React from "react"
-import { PageProps } from "gatsby"
+import React, { ReactElement } from "react"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 
-export default (props: PageProps) => {
-  const {
-    location: { pathname: currentPath },
-  } = props
-
+export default (): ReactElement => {
   return (
-    <Layout currentPath={currentPath}>
+    <Layout>
       <SEO title="Resume" description="This is my resume." />
       <div>Resume</div>
     </Layout>
