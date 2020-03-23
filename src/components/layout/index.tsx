@@ -6,7 +6,7 @@ import TopNav from "../top-nav"
 import "./style/index.less"
 
 type LayoutProps = {
-  children: Array<React.ReactElement>
+  children: Array<ReactElement>
 }
 
 function Layout(props: LayoutProps): ReactElement {
