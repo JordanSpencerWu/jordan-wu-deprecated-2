@@ -1,4 +1,5 @@
 import React, { memo, ReactElement } from "react"
+import "prismjs/themes/prism-okaidia.css"
 
 import BottomNav from "../bottom-nav"
 import Footer from "../footer"
