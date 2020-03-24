@@ -1,7 +1,11 @@
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
 
-async function createPages({ graphql, actions }) {
+const SOURCE_FILE_SYSTEM_NAMES = {
+  blogs: "blogs",
+  pages: "pages",
+}
+
+async function createPages({ graphql, actions, getNode }) {
   const { createPage } = actions
   const result = await graphql(`
     query {
@@ -11,6 +15,9 @@ async function createPages({ graphql, actions }) {
             fields {
               slug
             }
+            parent {
+              id
+            }
           }
         }
       }
@@ -18,30 +25,52 @@ async function createPages({ graphql, actions }) {
   `)
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/blog-post.tsx`),
-      context: {
-        slug: node.fields.slug,
-      },
-    })
+    const {
+      fields: { slug },
+      parent: { id: parentId },
+    } = node
+    const markdownNode = getNode(parentId)
+    const { sourceInstanceName } = markdownNode
+
+    switch (sourceInstanceName) {
+      case SOURCE_FILE_SYSTEM_NAMES.blogs:
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/blog-post.tsx`),
+          context: {
+            slug: slug,
+          },
+        })
+        break
+      default:
+        break
+    }
   })
 }
 
 function onCreateNode({ node, getNode, actions }) {
+  const {
+    internal: { type },
+    parent: parentId,
+  } = node
   const { createNodeField } = actions
 
-  if (node.internal.type === `MarkdownRemark`) {
-    const markdownNode = getNode(node.parent)
+  if (type === `MarkdownRemark`) {
+    const markdownNode = getNode(parentId)
+    const { sourceInstanceName } = markdownNode
 
-    if (markdownNode.sourceInstanceName == `blogs`) {
-      const slug = `/blogs/${markdownNode.name}/`
+    switch (sourceInstanceName) {
+      case SOURCE_FILE_SYSTEM_NAMES.blogs:
+        const slug = `/blogs/${markdownNode.name}/`
 
-      createNodeField({
-        node,
-        name: `slug`,
-        value: slug,
-      })
+        createNodeField({
+          node,
+          name: `slug`,
+          value: slug,
+        })
+        break
+      default:
+        break
     }
   }
 }
