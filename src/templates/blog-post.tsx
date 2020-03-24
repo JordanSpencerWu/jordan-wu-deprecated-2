@@ -9,7 +9,7 @@ export default (props): ReactElement => {
   const {
     data: {
       markdownRemark: {
-        frontmatter: { title, description },
+        frontmatter: { title, seo_description },
         html,
       },
     },
@@ -17,7 +17,7 @@ export default (props): ReactElement => {
 
   return (
     <Layout>
-      <SEO title="Blog Post" description={description} />
+      <SEO title="Blog Post" description={seo_description} />
       <div className="blog-post-container">
         <div className="blog-post-content-container">
           <h1>{title}</h1>
@@ -33,7 +33,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
-        description
+        seo_description
         title
       }
     }

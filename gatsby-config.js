@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     author: `Jordan Wu`,
-    description: `Jordan Wu`,
+    description: `This is my personal website made using Gatsby.`,
     githubUrl: `https://github.com/JordanSpencerWu`,
     linkedinUrl: `https://www.linkedin.com/in/jordanswu/`,
     siteUrl: `https://jordanspencerwu.github.io/`,
