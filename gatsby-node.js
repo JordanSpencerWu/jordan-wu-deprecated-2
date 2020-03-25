@@ -1,13 +1,19 @@
 const path = require(`path`)
 
-const SOURCE_FILE_SYSTEM_NAMES = {
+const GATSBY_FILE_SYSTEM_NAMES = {
   blogs: "blogs",
+  customPages: "custom-pages",
+  images: "images",
   pages: "pages",
 }
 
 async function createPages({ graphql, actions, getNode }) {
   const { createPage } = actions
-  const result = await graphql(`
+  const {
+    data: {
+      allMarkdownRemark: { edges: allMarkdownRemarkNodes },
+    },
+  } = await graphql(`
     query {
       allMarkdownRemark {
         edges {
@@ -24,7 +30,23 @@ async function createPages({ graphql, actions, getNode }) {
     }
   `)
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const {
+    data: {
+      allFile: { edges: allCustomPagesNodes },
+    },
+  } = await graphql(`
+    query allCustomPages {
+      allFile(filter: { sourceInstanceName: { eq: "custom-pages" } }) {
+        edges {
+          node {
+            name
+          }
+        }
+      }
+    }
+  `)
+
+  allMarkdownRemarkNodes.forEach(({ node }) => {
     const {
       fields: { slug },
       parent: { id: parentId },
@@ -33,7 +55,7 @@ async function createPages({ graphql, actions, getNode }) {
     const { sourceInstanceName } = markdownNode
 
     switch (sourceInstanceName) {
-      case SOURCE_FILE_SYSTEM_NAMES.blogs:
+      case GATSBY_FILE_SYSTEM_NAMES.blogs:
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/blog-post.tsx`),
@@ -43,6 +65,29 @@ async function createPages({ graphql, actions, getNode }) {
         })
         break
       default:
+        break
+    }
+  })
+
+  allCustomPagesNodes.forEach(({ node }) => {
+    const { name } = node
+    switch (name) {
+      case `blog`:
+        const limit = 10
+
+        createPage({
+          path: `/${name}`,
+          component: path.resolve(`./src/custom-pages/${name}.tsx`),
+          context: {
+            limit: limit,
+          },
+        })
+        break
+      default:
+        createPage({
+          path: `/${name}`,
+          component: path.resolve(`./src/custom-pages/${name}.tsx`),
+        })
         break
     }
   })
@@ -59,19 +104,26 @@ function onCreateNode({ node, getNode, actions }) {
     const markdownNode = getNode(parentId)
     const { sourceInstanceName } = markdownNode
 
+    let slug, sourceInstanceNameValue
     switch (sourceInstanceName) {
-      case SOURCE_FILE_SYSTEM_NAMES.blogs:
-        const slug = `/blogs/${markdownNode.name}/`
-
-        createNodeField({
-          node,
-          name: `slug`,
-          value: slug,
-        })
+      case GATSBY_FILE_SYSTEM_NAMES.blogs:
+        slug = `/blogs/${markdownNode.name}/`
+        sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.blogs
         break
       default:
         break
     }
+
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+    createNodeField({
+      node,
+      name: `sourceInstanceName`,
+      value: sourceInstanceNameValue,
+    })
   }
 }
 

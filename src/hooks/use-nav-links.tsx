@@ -16,11 +16,13 @@ export type NavLinkProps = {
 
 export const useNavLinks = (): Array<NavLinkProps> => {
   const {
-    allFile: { edges },
+    allFile: { edges: allPagesNodes },
   } = useStaticQuery(
     graphql`
-      query {
-        allFile(filter: { sourceInstanceName: { eq: "pages" } }) {
+      query allPages {
+        allFile(
+          filter: { sourceInstanceName: { regex: "/pages|custom-pages/" } }
+        ) {
           edges {
             node {
               name
@@ -31,7 +33,7 @@ export const useNavLinks = (): Array<NavLinkProps> => {
     `
   )
 
-  const navLinks = edges
+  const navLinks = allPagesNodes
     .map(getPageName)
     .sort(comparePageNames)
     .map(getNavLink)

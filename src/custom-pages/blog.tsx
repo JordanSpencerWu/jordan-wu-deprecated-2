@@ -8,10 +8,11 @@ import { BlogContent } from "../components/page-contents"
 export default (props): ReactElement => {
   const { data } = props
   const {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { edges: blogPostsNodes },
+    allFile: { edges: blogImagesNodes },
   } = data
 
-  const blogPosts = edges.map(getBlogPost)
+  const blogPosts = blogPostsNodes.map(getBlogPost)
 
   return (
     <Layout>
@@ -41,10 +42,11 @@ function getBlogPost(edge) {
 }
 
 export const blogPostsQuery = graphql`
-  query blogPostsQuery {
+  query blogPosts($limit: Int!) {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/blogs/" } }
+      filter: { fields: { sourceInstanceName: { eq: "blogs" } } }
       sort: { fields: frontmatter___date, order: DESC }
+      limit: $limit
     ) {
       edges {
         node {
@@ -60,6 +62,23 @@ export const blogPostsQuery = graphql`
           wordCount {
             words
           }
+        }
+      }
+    }
+
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "images" }
+        relativeDirectory: { eq: "blogs" }
+      }
+      sort: { fields: name, order: DESC }
+      limit: $limit
+    ) {
+      edges {
+        node {
+          name
+          relativePath
+          relativeDirectory
         }
       }
     }
