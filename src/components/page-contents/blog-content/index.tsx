@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import "./style/index.less"
 
-type Blog = {
+type BlogPost = {
   date: string
   excerpt: string
   slug: string
@@ -12,18 +12,18 @@ type Blog = {
 }
 
 type BlogContentProps = {
-  blogs: Array<Blog>
+  blogPosts: Array<BlogPost>
 }
 
 function BlogContent(props: BlogContentProps): ReactElement {
-  const { blogs } = props
+  const { blogPosts } = props
 
-  const renderBlogs = blogs.map(blog => {
-    const { date, excerpt, slug, title, words } = blog
+  const renderBlogs = blogPosts.map(blogPost => {
+    const { date, excerpt, slug, title, words } = blogPost
     const readTime = Math.ceil(words / 200)
 
     return (
-      <div className="blog-content-post-container" key={date}>
+      <div key={slug} className="blog-content-post-container">
         <Link to={slug} className="blog-content-heading">
           {title}
         </Link>

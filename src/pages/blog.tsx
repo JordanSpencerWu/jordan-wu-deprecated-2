@@ -11,17 +11,17 @@ export default (props): ReactElement => {
     allMarkdownRemark: { edges },
   } = data
 
-  const blogs = edges.map(getBlog)
+  const blogPosts = edges.map(getBlogPost)
 
   return (
     <Layout>
       <SEO title="My Blogs" description="This is my blogs." />
-      <BlogContent blogs={blogs} />
+      <BlogContent blogPosts={blogPosts} />
     </Layout>
   )
 }
 
-function getBlog(edge) {
+function getBlogPost(edge) {
   const {
     node: {
       frontmatter: { date, title },
@@ -40,8 +40,8 @@ function getBlog(edge) {
   }
 }
 
-export const blogs = graphql`
-  query blogs {
+export const blogPostsQuery = graphql`
+  query blogPostsQuery {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/blogs/" } }
       sort: { fields: frontmatter___date, order: DESC }
@@ -56,7 +56,7 @@ export const blogs = graphql`
           fields {
             slug
           }
-          excerpt
+          excerpt(pruneLength: 160)
           wordCount {
             words
           }
