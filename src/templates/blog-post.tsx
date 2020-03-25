@@ -1,5 +1,6 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
+import { navigate } from "@reach/router"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
@@ -15,11 +16,18 @@ export default (props): ReactElement => {
     },
   } = props
 
+  const goBack = () => {
+    navigate(-1)
+  }
+
   return (
     <Layout>
       <SEO title="Blog Post" description={seo_description} />
       <div className="blog-post-container">
         <div className="blog-post-content-container">
+          <a onClick={goBack} className="blog-post-back-link">
+            Go back
+          </a>
           <h1>{title}</h1>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>

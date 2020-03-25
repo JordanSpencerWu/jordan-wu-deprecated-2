@@ -27,6 +27,7 @@ function getBlog(edge) {
       frontmatter: { date, title },
       fields: { slug },
       excerpt,
+      wordCount: { words },
     },
   } = edge
 
@@ -35,6 +36,7 @@ function getBlog(edge) {
     excerpt,
     slug,
     title,
+    words,
   }
 }
 
@@ -48,13 +50,16 @@ export const blogs = graphql`
         node {
           id
           frontmatter {
-            date
+            date(formatString: "MMMM DD")
             title
           }
           fields {
             slug
           }
           excerpt
+          wordCount {
+            words
+          }
         }
       }
     }
