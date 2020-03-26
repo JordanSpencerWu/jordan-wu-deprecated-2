@@ -25,7 +25,18 @@ function Footer(props: FooterProps): ReactElement {
           <LinkedInIcon />
         </a>
       </div>
-      <p>{`powered by Gatsby`}</p>
+      <div className="footer-gatsby-link-container">
+        <p>
+          {`powered by `}
+          <a
+            className="footer-link"
+            href="https://www.gatsbyjs.org/"
+            target="_blank"
+          >
+            Gatsby
+          </a>
+        </p>
+      </div>
     </div>
   )
 }

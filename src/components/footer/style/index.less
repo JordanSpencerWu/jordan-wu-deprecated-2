@@ -28,6 +28,25 @@
     }
   }
 
+  &-gatsby-link-container {
+    z-index: 10;
+
+    & > p {
+      font-size: 16px;
+      font-weight: 200;
+      margin: 0;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  &-link {
+    font-size: 18px;
+    color: @active-nav-color;
+  }
+
   &-social-media-container {
     display: flex;
     position: absolute;
@@ -35,10 +54,7 @@
     width: 100%;
 
     & a {
-      background-image: none;
-      color: @text-color;
       font-size: 18px;
-      text-shadow: none;
       padding: 8px;
       margin: 0 4px;
     }
