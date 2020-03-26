@@ -1,9 +1,11 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
+import Image from "gatsby-image"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
 import { BlogContent } from "../components/page-contents"
+import blogPost from "../components/page-contents/blog-content/blog-post"
 
 export default (props): ReactElement => {
   const { data } = props
@@ -12,7 +14,10 @@ export default (props): ReactElement => {
     allFile: { edges: blogImagesNodes },
   } = data
 
-  const blogPosts = blogPostsNodes.map(getBlogPost)
+  const imageFluids = blogImagesNodes.map(getImageFluid)
+  const blogPosts = blogPostsNodes
+    .map(getBlogPost)
+    .map((blogPost, index) => ({ ...blogPost, ...imageFluids[index] }))
 
   return (
     <Layout>
@@ -20,6 +25,18 @@ export default (props): ReactElement => {
       <BlogContent blogPosts={blogPosts} />
     </Layout>
   )
+}
+
+function getImageFluid(edge) {
+  const {
+    node: {
+      childImageSharp: { fluid },
+    },
+  } = edge
+
+  return {
+    fluid,
+  }
 }
 
 function getBlogPost(edge) {
@@ -58,7 +75,7 @@ export const blogPostsQuery = graphql`
           fields {
             slug
           }
-          excerpt(pruneLength: 160)
+          excerpt(pruneLength: 110)
           wordCount {
             words
           }
@@ -76,9 +93,11 @@ export const blogPostsQuery = graphql`
     ) {
       edges {
         node {
-          name
-          relativePath
-          relativeDirectory
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
         }
       }
     }
