@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 export default (): ReactElement => {
   return (
     <Layout>
-      <SEO title="Resume" description="This is my resume." />
+      <SEO title="My Resume" description="This is my resume." />
       <div>Resume</div>
     </Layout>
   )

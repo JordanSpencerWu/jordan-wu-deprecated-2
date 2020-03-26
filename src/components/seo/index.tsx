@@ -23,7 +23,7 @@ function SEO(props: SEOProps): ReactElement {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={title === "Home" ? title : `${title} | Jordan Wu`}
       meta={[
         {
           name: `description`,

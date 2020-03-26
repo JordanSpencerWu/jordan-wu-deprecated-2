@@ -1,5 +1,4 @@
 import React, { ReactElement, memo } from "react"
-import Image from "gatsby-image"
 
 import "./style/index.less"
 import BlogPost from "./blog-post"
