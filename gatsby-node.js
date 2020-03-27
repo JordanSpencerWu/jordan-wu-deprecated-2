@@ -2,6 +2,7 @@ const path = require(`path`)
 
 const GATSBY_FILE_SYSTEM_NAMES = {
   blogs: "blogs",
+  books: "books",
   customPages: "custom-pages",
   images: "images",
   pages: "pages",
@@ -58,7 +59,16 @@ async function createPages({ graphql, actions, getNode }) {
       case GATSBY_FILE_SYSTEM_NAMES.blogs:
         createPage({
           path: slug,
-          component: path.resolve(`./src/templates/blog-post.tsx`),
+          component: path.resolve(`./src/templates/blog-post/index.tsx`),
+          context: {
+            slug: slug,
+          },
+        })
+        break
+      case GATSBY_FILE_SYSTEM_NAMES.books:
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/book-note/index.tsx`),
           context: {
             slug: slug,
           },
@@ -109,6 +119,10 @@ function onCreateNode({ node, getNode, actions }) {
       case GATSBY_FILE_SYSTEM_NAMES.blogs:
         slug = `/blogs/${markdownNode.name}/`
         sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.blogs
+        break
+      case GATSBY_FILE_SYSTEM_NAMES.books:
+        slug = `/books/${markdownNode.name}/`
+        sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.books
         break
       default:
         break

@@ -48,6 +48,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `books`,
+        path: `${__dirname}/src/books/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `custom-pages`,
         path: `${__dirname}/src/custom-pages/`,
       },
@@ -70,6 +77,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-mathjax`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

@@ -2,8 +2,8 @@ import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
 import { navigate } from "@reach/router"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
+import SEO from "../../components/seo"
+import Layout from "../../components/layout"
 import "./style/index.less"
 
 export default (props): ReactElement => {
