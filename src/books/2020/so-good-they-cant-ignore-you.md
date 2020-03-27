@@ -32,7 +32,7 @@ the happiest, most passionate employees are not those who followed their passion
 
 Passion is a side effect of Mastery
 
-Self-Determination Theory (SDT) tells us that motivation requires three basic psychological needs:
+Self-Determination Theory SDT tells us that motivation requires three basic psychological needs:
 
 1. **Autonomy**: the feeling that you have control over your day, and that your actions are important.
 

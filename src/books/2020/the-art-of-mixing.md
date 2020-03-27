@@ -17,12 +17,12 @@ title: The Art Of Mixing Third Edition
 7. Density of Arrangement
 8. Instrumentation
 9. Song Structure
-10. Performance (pitch, timing, technique, dynamics, and greatness)
+10. Performance pitch, timing, technique, dynamics, and greatness
 11. Quality of the Equipment and the Recording
 12. Hooks
 13. The Mix
 
-We relate to sound in two ways: we feel (and hear) the physical sound waves that come out of the speakers, and we imagine the apparent placement of sounds between the speakers.
+We relate to sound in two ways: we feel and hear the physical sound waves that come out of the speakers, and we imagine the apparent placement of sounds between the speakers.
 
 A sound can be moved around in the space between the speakers by changing the volume, panning, and pitch.
 
@@ -58,7 +58,7 @@ Storage device stores sound or MIDI information and play it back.
 
 Sound transducers take one form of energy and change it into another.
 
-three components to sound: volume (or amplitude), frequency, and time.
+three components to sound: volume or amplitude, frequency, and time.
 
 Volume faders control the volume of each sound in the mix, including effects.
 

@@ -46,7 +46,7 @@ The habits and addictions of the amateur are conscious or unconscious self-infli
 
 The amateur fears that if he turns pro and lives out his calling, he will have to live up to who he really is and what he is truly capable of.
 
-The amateur fears, above all else, becoming (and being seen and judged as) himself.
+The amateur fears, above all else, becoming and being seen and judged as himself.
 
 In his heart, the amateur knows he's hiding.
 
