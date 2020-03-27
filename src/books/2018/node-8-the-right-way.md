@@ -22,11 +22,11 @@ A protocol is a set of rules that defines how endpoints in a system communicate.
 
 Strong convention in the Node community to put supporting code in the lib directory.
 
-Regular dependencies are used at runtime by your code when you use require() to bring in modules. Dev dependences are programs that your project needs during development.
+Regular dependencies are used at runtime by your code when you use `require()` to bring in modules. Dev dependences are programs that your project needs during development.
 
 ##### Semantic versioning convention:
 
-1. If your code change does not introduce or remove any functionality (like a bug fix), then just increment the patch version.
+1. If your code change does not introduce or remove any functionality like a bug fix, then just increment the patch version.
 
 2. If your code introduces functionality but doesn't remove or alter existing functionality, then increment the minor version and reset the patch version.
 
@@ -50,4 +50,4 @@ PUSH and PULL Socket types are useful when you have a queue of jobs that you wan
 
 A message traveling from a PUSH socket to a PULL socket is one-way: the puller can't send a response back through the same socket.
 
-The practice of compiling source code from one programming language into another (or from one language version to another version) is called transpiling.
+The practice of compiling source code from one programming language into another or from one language version to another version is called transpiling.
