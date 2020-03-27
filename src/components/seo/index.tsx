@@ -18,12 +18,36 @@ function SEO(props: SEOProps): ReactElement {
 
   const metaDescription = description || siteMetadata.description
 
+  const scripts = [
+    {
+      type: "text/x-mathjax-config",
+      innerHTML: `
+      window.MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        tex2jax: {preview: "none"}
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] },
+      messageStyle: "none"
+    });`,
+    },
+    {
+      type: `text/javascript`,
+      src: `https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML`,
+    },
+  ]
+
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title === "Home" ? title : `${title} | Jordan Wu`}
+      title={title === `Home` ? title : `${title} | Jordan Wu`}
+      script={scripts}
       meta={[
         {
           name: `description`,
@@ -59,7 +83,7 @@ function SEO(props: SEOProps): ReactElement {
         },
         ...meta,
       ]}
-    />
+    ></Helmet>
   )
 }
 

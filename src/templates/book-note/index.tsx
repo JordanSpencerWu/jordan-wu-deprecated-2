@@ -25,10 +25,15 @@ export default (props): ReactElement => {
   return (
     <Layout>
       <SEO title={title} description={seo_description} />
-      <div>
-        <h1>{title}</h1>
-        <small>{authorNames}</small>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="book-note-container">
+        <div className="book-note-content-container">
+          <a onClick={goBack} className="blog-post-back-link">
+            Go back
+          </a>
+          <h1>{title}</h1>
+          <small>{authorNames}</small>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </div>
     </Layout>
   )
