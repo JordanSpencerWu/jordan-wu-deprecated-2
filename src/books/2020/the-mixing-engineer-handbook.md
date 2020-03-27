@@ -2,7 +2,7 @@
 author: [Bobby Owsinski]
 date: 2020-02-15
 description: A very useful handbook for mixing engineers. The most important learning for me is timing the delay time to the tempo of the track. This in my opinion gives the track a groove that sounds good.
-seo-description: The mixing engineer's handbook notes.
+seo-description: The mixing engineer's handbook by Bobby Owsinski notes.
 title: THE MIXING ENGINEER'S HANDBOOK Fourth Edition
 ---
 
