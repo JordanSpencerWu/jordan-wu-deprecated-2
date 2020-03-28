@@ -24,7 +24,7 @@ Name is everywhere in software, it's important to pick a intention-revealing nam
 
 The most important rule of functions is that it should be small!! This implies that the function block using if statement, else statements, while statements, and so on should be a function call. This allows you to name a descriptive function name and reduces your function size. Use the Step-down rule, a top-down narrative where every function to be followed by those at the next level of abstraction.
 
-The ideal number of arguments for a function is zero (niladic). The more arguments you have, the more complex your function gets, we want simple and short functions! You can create functions with parameters but think carefully! Give parameter meaningful names that goes with the descriptive function name.
+The ideal number of arguments for a function is zero niladic. The more arguments you have, the more complex your function gets, we want simple and short functions! You can create functions with parameters but think carefully! Give parameter meaningful names that goes with the descriptive function name.
 
 Avoid side effects! Your functions should only do one thing, avoid doing other hidden things. If you do have a side effect, include the side effect in the function name.
 
@@ -128,7 +128,7 @@ Objects hide their data behind abstractions and expose functions that operate on
   }
 ```
 
-> Procedual code (code using data structure) makes it easy to add new functions without changing the existing data structure. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
+> Procedual code makes it easy to add new functions without changing the existing data structure. OO code, on the other hand, makes it easy to add new classes without changing existing functions.
 
 In other words:
 
@@ -146,7 +146,7 @@ We want to control all software in our systems. This includes cleanly integratin
 
 #### Unit Tests
 
-Test Driven Development (TDD) asks us to write unit tests first, before writing any production code. The tests and the production code are written together, with the tests just a few seconds ahead of the production code. Consider the following three laws:
+Test Driven Development TDD asks us to write unit tests first, before writing any production code. The tests and the production code are written together, with the tests just a few seconds ahead of the production code. Consider the following three laws:
 
 1. You may not write production code until you have written a failing unit test.
 2. You may not write more of a unit test than is sufficient to fail, and not compiling is failing.
@@ -162,7 +162,7 @@ Clean tests follow **F.I.R.S.T.** acronym :
 
 **Repeatable**: Test should be repeatable in any environment.
 
-**Self-Validating**: The tests should have a boolean output (pass or fail).
+**Self-Validating**: The tests should have a boolean output pass or fail.
 
 **Timely**: The tests need to be written in a timely fashion.
 
@@ -170,7 +170,7 @@ Clean tests follow **F.I.R.S.T.** acronym :
 
 #### Classes
 
-The first rule of classes is that they should be small! With classes we count responsibilities. The name of the class should depend on the responsibility it has. The Single Responsibility Principle (SRP) states that classes should have one responsibility - one reason to change. We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
+The first rule of classes is that they should be small! With classes we count responsibilities. The name of the class should depend on the responsibility it has. The Single Responsibility Principle SRP states that classes should have one responsibility - one reason to change. We want our systems to be composed of many small classes, not a few large ones. Each small class encapsulates a single responsibility, has a single reason to change, and collaborates with a few others to achieve the desired system behaviors.
 
 Classes should have a small number of instance variables. Each of the methods of a class should manipulate one or more of those variables. In general the more variables a method manipulates the more cohesive that method is to its class. When cohesion is high, it means that the methods and variables of the class are co-dependent and hang together as a logical whole. Maintaining cohesion results in many small classes.
 
@@ -180,7 +180,7 @@ The code base is similiar to cities, teams of people who manage particular parts
 
 #### Emergence
 
-Here are four simple rules that will help make applying principles such as Single Responsibility Principle (SRP) and Dependency Injection Principle (DIP) easier. A testable system is important, writing simple and easy tests will make us think about better designs. Following a simple and obvious rule that says we need to have tests and run them continuously impacts our system's adherence to the primary Object Oriented (OO) goals of low coupling and high cohesion. Once we have a testable system, refactor to clean code. The fact that we have these tests eliminates the fear that cleaning up the code will break it.
+Here are four simple rules that will help make applying principles such as Single Responsibility Principle SRP and Dependency Injection Principle DIP easier. A testable system is important, writing simple and easy tests will make us think about better designs. Following a simple and obvious rule that says we need to have tests and run them continuously impacts our system's adherence to the primary Object Oriented OO goals of low coupling and high cohesion. Once we have a testable system, refactor to clean code. The fact that we have these tests eliminates the fear that cleaning up the code will break it.
 
 1. Runs All the Tests
 2. Contains no duplication

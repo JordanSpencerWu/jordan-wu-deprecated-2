@@ -26,13 +26,13 @@ If you want to be a superstar, then you need to find a field with a steep Dip, a
 
 ##### Seven Reasons You Might Fail to Become the Best in the World
 
-1. You run out of time (and quit).
-2. You run out of money (and quit).
-3. You get scared (and quit).
-4. You're not serious about it (and quit).
-5. You lost interest or enthusiasm or settle for being mediocre (and quit).
-6. You focus on the short term instead of the long (and quit when the short term gets too hard).
-7. You pick the wrong thing at which to be the best in the world (because you don't have the talent).
+1. You run out of time and quit.
+2. You run out of money and quit.
+3. You get scared and quit.
+4. You're not serious about it and quit.
+5. You lost interest or enthusiasm or settle for being mediocre and quit.
+6. You focus on the short term instead of the long and quit when the short term gets too hard.
+7. You pick the wrong thing at which to be the best in the world because you don't have the talent.
 
 That's the goal of any competitor: to create a Dip so long and so deep that the nascent competition can't catch up.
 
@@ -46,7 +46,7 @@ Short-term pain has more impact on most people than long-term benefits do, which
 
 Quitting the projects that don't go anywhere is essential if you want to stick out the right ones.
 
-If your job is a Cul-de-Sac (French for "dead end"), you have to quit or accept the fact that your career is over.
+If your job is a Cul-de-Sac French for "dead end", you have to quit or accept the fact that your career is over.
 
 Strategic quitting is a conscious decision you make based on the choices that are available to you.
 

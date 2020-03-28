@@ -42,7 +42,7 @@ _Desiring_ riches with a state of mind that becomes an obsession, then planning 
 
 **FAITH** is the head chemist of the mind. The emotions of **FAITH, LOVE**, and **SEX** are the most powerful of all the major positive emotions. Love and faith are psychic; related to the spiritual side of man. Sex is purely biological, and related only to the physical. The mixing, or blending, of these three emotions has the effect of opening a direct line of communication between the finite, thinking mind of man, and Infinite Intelligence. The principle of auto-suggestion assumes in the transmutation of desire into its physical, or monetary equivalent; namely: **FAITH** is a state of mind which may be induced, or created, by affirmation or repeated instructions to the subconscious mind, through the principle of auto-suggestion.
 
-**ALL THOUGHTS WHICH HAVE BEEN EMOTIONALIZED, (given feeling) AND MIXED WITH FAITH**, begin immediately to translate themselves into their physical equivalent or counterpart. Understand that the subconscious mind will translate into its physical equivalent, a thought impulse of a negative or destructive nature, just as readily as it will act upon thought impulses of a positive or constructive nature.
+**ALL THOUGHTS WHICH HAVE BEEN EMOTIONALIZED, given feeling AND MIXED WITH FAITH**, begin immediately to translate themselves into their physical equivalent or counterpart. Understand that the subconscious mind will translate into its physical equivalent, a thought impulse of a negative or destructive nature, just as readily as it will act upon thought impulses of a positive or constructive nature.
 
 Understand this truth, and you will know why it is essential for you to encourage the _positive emotions_ as dominating forces of your mind, and discourage - and _eliminate_ negative emotions.
 
@@ -96,7 +96,7 @@ Fifth. I fully realize that no wealth or position can long endure, unless built 
 
 ### AUTO-SUGESSTION - THE MEDIUM FOR INFLUENCING THE SUBCONSIOUS MIND
 
-**AUTO-SUGGESTION** is a term which applies to all suggestions and all self-administered stimuli which reach one's mind through the five senses. Through the dominating thoughts which one _permits_ to remain in the conscious mind, (whether these thoughts be negative or positive, is immaterial), the principle of auto-suggestion voluntarily reaches the subconscious mind and influences it with these thoughts.
+**AUTO-SUGGESTION** is a term which applies to all suggestions and all self-administered stimuli which reach one's mind through the five senses. Through the dominating thoughts which one _permits_ to remain in the conscious mind, whether these thoughts be negative or positive, is immaterial, the principle of auto-suggestion voluntarily reaches the subconscious mind and influences it with these thoughts.
 
 **NO THOUGHT**, whether it be negative or positive, **CAN ENTER THE SUBCONSIOUS MIND WITHOUT THE AID OF THE PRINCIPLE OF AUTO-SUGGESTION**, with the exception of thoughts picked up from the ether.
 
@@ -247,7 +247,7 @@ Annual self-analysis is an essential in the effective marketing of personal serv
 
 #### SELF-ANALYSIS QUESTIONNAIRE FOR PERSONAL INVENTORY
 
-1. Have I attained the goal which I established as my objective for this year? (You should work with a definite yearly objective to be attained as a part of your major life objective).
+1. Have I attained the goal which I established as my objective for this year? You should work with a definite yearly objective to be attained as a part of your major life objective.
 2. Have I delivered service of the best possible **QUALITY** of which I was capable, or could I have improved any part of this service?
 3. Have I delivered service in the greatest possible **QUANTITY** of which I was capable?
 4. Has the spirit of my conduct been harmonious, and cooperative at all times?
@@ -274,7 +274,7 @@ Annual self-analysis is an essential in the effective marketing of personal serv
 25. If I had been the purchaser of my own services for the year, would I be satisfied with my purchase?
 26. Am I in the right vocation, and if not, why not?
 27. Has the purchaser of my services been satisfied with the service I have rendered, and if not, why not?
-28. What is my present rating on the fundamental principles of success? (Make this rating fairly, and frankly, and have it checked by someone who is courageous enough to do it accurately).
+28. What is my present rating on the fundamental principles of success? Make this rating fairly, and frankly, and have it checked by someone who is courageous enough to do it accurately.
 
 Those who have lost their fortunes, and those who are just beginning to earn money, have nothing but personal services to offer in return for riches, therefore it is essential that they have available the practical information needed to market services to best advantage.
 
@@ -373,7 +373,7 @@ The "Master Mind" may be defined as: "Coordination of knowledge and effort, in a
 
 The human mind is a form of energy, a part of it being spiritual in nature. When the mind of two people are coordinated in a **SPIRIT OF HARMONY**, the spiritual unit of energy of each mind form an affinity, which constitutes the "psychic" phase of the Master Mind.
 
-**ENERGY** is Nature's universal set of building blocks, out of which she constructs every material thing in the universe, including man, and every form of animal and vegetable life. Nature's building blocks are available to man in the energy involved in **THINKING!** Man's brain may be compared to an electric battery. It absorbs energy from the ether, which permeates every atom of matter, and fills the entire universe. It is a well known fact that a group of electric batteries will provide more energy than a single battery. A group of brains coordinated (or connected) in a spirit of harmony, will provide more thought-energy than a single brain, just as a group of electric batteries will provide more energy than a single battery.
+**ENERGY** is Nature's universal set of building blocks, out of which she constructs every material thing in the universe, including man, and every form of animal and vegetable life. Nature's building blocks are available to man in the energy involved in **THINKING!** Man's brain may be compared to an electric battery. It absorbs energy from the ether, which permeates every atom of matter, and fills the entire universe. It is a well known fact that a group of electric batteries will provide more energy than a single battery. A group of brains coordinated or connected in a spirit of harmony, will provide more thought-energy than a single brain, just as a group of electric batteries will provide more energy than a single battery.
 
 Men take on the nature and the habits and the **POWER OF THOUGHT** of those with whom they associate in a spirit of sympathy and harmony.
 
@@ -426,7 +426,7 @@ The pages of history are filled with the records of great leaders whose achievem
 
 Sex energy is the creative energy for all genii, _There never has been, and never will be a great leader, builder, or artist lacking in this driving force of sex_. Man attains to the status of a genius ONLY when, and IF, he stimulates his mind so that it draws upon the forces available, through the creative faculty of the imagination.
 
-The years between forty and fifty are, as a rule, the most fruitful. Biographies of American industrialists and financiers are filled with evidence that the period from forty to sixty is the most productive age of man. Between the ages of thirty and forty, man begins to learn (if he ever learns), the art of sex transmutation.
+The years between forty and fifty are, as a rule, the most fruitful. Biographies of American industrialists and financiers are filled with evidence that the period from forty to sixty is the most productive age of man. Between the ages of thirty and forty, man begins to learn if he ever learns, the art of sex transmutation.
 
 When driven by his desire to please a woman, based solely upon the emotion of sex, a man may be, and usually is, capable of great achievement, but his actions may be disorganized, distorted and totally destructive. When driven by his desire to please a woman, based upon the motive of sex alone, a man may steal, cheat, and even commit murder. But when the emotion of **LOVE** is used with the emotion of sex, that same man will guide his actions with more sanity, balance, and reason.
 
@@ -510,7 +510,7 @@ Thoughts are truly things, for the reason that every material thing begins in th
 
 There are seven major positive emotions, and seven major negative emotions. The negatives _voluntarily_ inject themselves into the thought impulses, which insure passage into the subconscious mind. The positives must be injected, through the principle of auto-suggestion, into the thought impulses which an individual wishes to pass on to his subconscious mind.
 
-The seven major positive emotions are **DESIRE, FAITH, LOVE, SEX, ENTHUSIASM, ROMANCE**, and **HOPE**. The seven major negative emotions (to be avoided) are **FEAR, JEALOUSY, HATRED, REVENGE, GREED, SUPERSTITION**, and **ANGER**.
+The seven major positive emotions are **DESIRE, FAITH, LOVE, SEX, ENTHUSIASM, ROMANCE**, and **HOPE**. The seven major negative emotions to be avoided are **FEAR, JEALOUSY, HATRED, REVENGE, GREED, SUPERSTITION**, and **ANGER**.
 
 Positive and negative emotions cannot occupy the mind at the same time. One or the other must dominate, it's your responsibility to make sure that positive emotions constitute the dominating influence of your mind. Form the habit of applying and using the positive emotions!
 
@@ -665,4 +665,4 @@ The Master Key is intangible, but it is powerful! It is the privilege of creatin
 - Do you cater to people because of their social or financial status?
 - Whom do you believe to be the greatest person living?
 - In what respect is this person superior to yourself?
-- How much time have you devoted to studying and answering these questions? (At least one day is necessary for the analysis and the answering of the entire list.)
+- How much time have you devoted to studying and answering these questions? At least one day is necessary for the analysis and the answering of the entire list.
