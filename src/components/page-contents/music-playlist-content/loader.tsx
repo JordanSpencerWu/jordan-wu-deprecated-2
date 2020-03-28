@@ -6,7 +6,7 @@ type LoaderProps = {}
 
 function Loader(props: LoaderProps): ReactElement {
   return (
-    <div className="music-playlist-loader-container">
+    <div className="music-playlist-loader-container fadeIn">
       <LoaderSVG />
     </div>
   )

@@ -16,7 +16,7 @@ function BlogPost(props: BlogPostProps): ReactElement {
   const readTime = Math.ceil(words / 200)
 
   return (
-    <div className="blog-content-post-container">
+    <div className="blog-content-post-container fadeIn">
       <div className="blog-content-post-article-container">
         <Link to={slug} className="blog-content-heading">
           {title}
