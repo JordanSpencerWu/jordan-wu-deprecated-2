@@ -4,6 +4,7 @@ import { navigate } from "@reach/router"
 
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
+import { SPACE } from "../../utils/constants"
 import "./style/index.less"
 
 export default (): ReactElement => {
@@ -41,7 +42,7 @@ export default (): ReactElement => {
     }
   `)
 
-  const authorNames = author.join(" ")
+  const authorNames = author.join(SPACE)
   const codeCompleteLinks = codeCompleteNodes.map(({ node }) => {
     const {
       fields: { slug },
@@ -61,7 +62,7 @@ export default (): ReactElement => {
 
   const renderChapters = codeCompleteLinks.map(({ slug, name }) => (
     <Link key={name} to={slug}>
-      {name.replace("-", " ")}
+      {name.replace("-", SPACE)}
     </Link>
   ))
 

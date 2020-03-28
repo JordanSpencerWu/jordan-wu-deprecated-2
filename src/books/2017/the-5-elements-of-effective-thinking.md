@@ -1,5 +1,5 @@
 ---
-author: [Edward B. Burger, And, Michael Starbird]
+author: [Edward B. Burger, Michael Starbird]
 date: 2017-06-21
 description: The key to becoming a better lifelong student is to think effectively. We cannot be afraid of failing, instead look at it as a starting point. It's about learning the basic at a deeper level, this in return will provide us the foundation we need to learn more complex and advance topics.
 seo-description: The 5 elements of effective thinking by Edward B. Burger and Michael Starbird notes.

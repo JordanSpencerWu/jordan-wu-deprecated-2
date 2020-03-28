@@ -1,5 +1,5 @@
 ---
-author: [David H. Hoover, And, Adewale Oshineye]
+author: [David H. Hoover, Adewale Oshineye]
 date: 2016-11-07
 description: This book is a complete guide for the aspiring software craftsman, people who have had a taste of developing software and want to take it further, but need some guidance. The book goes over patterns found in The Long Road of mastering software craftsmanship. The key is to be a lifelong learner, you control your learning.
 seo-description: Apprenticeship patterns - guidance for the aspiring software craftsman by David H. Hoover and Adewale Oshineye notes.

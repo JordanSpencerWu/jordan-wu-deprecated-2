@@ -1,5 +1,5 @@
 ---
-author: [Michael Hyatt, And, Daniel Harkavy]
+author: [Michael Hyatt, Daniel Harkavy]
 date: 2016-12-24
 description: The book is about creating a plan to live the life you want. The metaphor the book uses is that life is like a GPS, we need to know the end destination before we know how to get where we are to the destination we want to go. This involves creating a Life Plan, a written document that contains specific actions to get to our destination in life.
 seo-description: Living forward - a proven plan to stop drifting and get the life you want by Michael Hyatt and Daniel Harkavy notes.

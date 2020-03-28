@@ -1,5 +1,5 @@
 ---
-author: [Amy Wallace, And, Edwin Catmull]
+author: [Amy Wallace, Edwin Catmull]
 date: 2017-03-26
 description: This books talks about sustaining a creative culture. We all know that history is the best teacher, the author Ed Catmull talks about how he created Pixar Animation and its relationship between technology and art. It's about creating a fear free environment and solving problems as a whole. "Leaders must demonstrate their trustworthiness, over time, through their actions, and the best way to do that is by responding well to failure."
 seo-description: Creativity, Inc. - overcoming the unseen forces that stand in the way of true inspiration by Amy Wallace and Edwin Catmull notes.

@@ -1,6 +1,8 @@
 import { useStaticQuery, graphql } from "gatsby"
 import { FileSystemNode } from "gatsby-source-filesystem"
 
+import { SPACE } from "../utils/constants"
+
 const MENU_LINKS_ORDER = [
   "home",
   "blog",
@@ -58,7 +60,7 @@ function getNavLink(pageName: string): NavLinkProps | null {
   if (pageName == "index") return { name: "home", linkTo: "/" }
 
   return {
-    name: pageName.replace(/-/g, " "),
+    name: pageName.replace(/-/g, SPACE),
     linkTo: `/${pageName}`,
   }
 }

@@ -1,5 +1,5 @@
 ---
-author: [Anders Ericsson, and, Robert Pool]
+author: [Anders Ericsson, Robert Pool]
 date: 2017-01-22
 description: A better way to see ourselves would be "practicing man," the species that takes control of its life through practice and makes of itself what it will. All we have to do is use deliberate practice to get the skills we desire. With the help of our adaptable and flexible brain and body, we can create our own potential and control our own lives.
 seo-description: Peak - secrets from the new science of expertise by Anders Ericsson and Robert Pool notes.

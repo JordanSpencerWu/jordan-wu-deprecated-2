@@ -1,5 +1,5 @@
 ---
-author: [Mark Williams, And, Danny Penman]
+author: [Mark Williams, Danny Penman]
 date: 2017-06-21
 description: In this life, you must control your mind. It's the first step to conquering the self and to live a peaceful life in this frantic world. This book holds many meditation practices for you to apply in your everyday life.
 seo-description: Mindfulness - an eight-week plan for finding peace in a frantic world by Mark Williams and Danny Penman notes.

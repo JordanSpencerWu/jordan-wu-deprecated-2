@@ -1,5 +1,5 @@
 ---
-author: [Clayton M. Christensen, And, James Allworth, And, Karen Dillon]
+author: [Clayton M. Christensen, James Allworth, Karen Dillon]
 date: 2017-11-16
 description: To become successful in any way, we have to define what type of person we strive to become in the future. It's a Life Plan that has a set of rules and theories that will guide us to our destination in life. We have control over our life and we can be successful in both our career and relationships.
 seo-description: How will you measure your life by Clayton M. Christensen and James Allworth and Karen Dillon notes.

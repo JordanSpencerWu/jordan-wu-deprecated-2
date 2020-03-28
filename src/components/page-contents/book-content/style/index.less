@@ -19,6 +19,29 @@
     }
   }
 
+  &-search-container {
+    margin-bottom: 15px;
+    display: flex;
+
+    & > label {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    & > input {
+      border-width: 1px;
+    }
+  }
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      &-search-container {
+        flex-direction: column;
+        margin-bottom: 25px;
+      }
+    }
+  }
+
   &-image {
     width: 200px;
     height: 100%;

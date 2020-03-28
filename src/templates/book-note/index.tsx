@@ -4,6 +4,7 @@ import { navigate } from "@reach/router"
 
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
+import { SPACE } from "../../utils/constants"
 import "./style/index.less"
 
 export default (props): ReactElement => {
@@ -21,7 +22,7 @@ export default (props): ReactElement => {
     window.MathJax && window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub])
   })
 
-  const authorNames = author.join(" ")
+  const authorNames = author.join(SPACE)
 
   const goBack = () => {
     navigate(-1)

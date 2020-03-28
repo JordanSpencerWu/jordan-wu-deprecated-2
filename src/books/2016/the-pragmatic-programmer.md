@@ -1,5 +1,5 @@
 ---
-author: [Andrew Hunt, And, David Thomas]
+author: [Andrew Hunt, David Thomas]
 date: 2016-09-07
 description: The road to mastering your software craftsmanship is to constantly invest in your learning. This book shows you how a pragmatic programmer create clean, flexible, and adaptable code. Everything you need to know about working on a project and more!
 seo-description: The pragmatic programmer - from journeyman to master by Andrew Hunt and David Thomas notes.

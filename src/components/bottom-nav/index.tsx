@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { LinkGetProps } from "@reach/router"
 
 import { NavLinkProps, useNavLinks } from "../../hooks/use-nav-links"
+import { EMPTY_STRING } from "../../utils/constants"
 import "./style/index.less"
 
 const BlogIcon = require("../../images/blog.svg")
@@ -66,7 +67,7 @@ function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
       icon = <ResumeIcon className="bottom-nav-icon" />
       break
     default:
-      navName = ""
+      navName = EMPTY_STRING
       icon = null
       break
   }
