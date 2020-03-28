@@ -12,7 +12,7 @@ Rather than planning for change points, we build systems, by applying simple des
 
 1. Tests Pass
 2. Expresses Intent
-3. No Duplication (DRY)
+3. No Duplication DRY
 4. Small
 
 ##### Test Names Should Influence Object's API
@@ -131,7 +131,7 @@ In a earlier example, we looked at:
   end
 ```
 
-We can see that we are testing for a empty world then adding a cell into the empty world. However, looking at the test code, we can see details about the topology: the (1,1). In this case, the test code is implying that the `empty` method is somehow dependent on the coordinates, themselves. To improve this, we hide the details of the topology from the world object.
+We can see that we are testing for a empty world then adding a cell into the empty world. However, looking at the test code, we can see details about the topology: the 1,1. In this case, the test code is implying that the `empty` method is somehow dependent on the coordinates, themselves. To improve this, we hide the details of the topology from the world object.
 
 ```ruby
   def test_world_is_not_empty_after_adding_a_cell
@@ -218,7 +218,7 @@ Let's look at the Cell classes.
   end
 ```
 
-Notice we talking about classes here. A class tend to encapsulate and provide behavoir around state. Methods on them are generally involved in working with that state. In this state the methods are not accessing internal state. Why don’t we reify the idea of a rule? One of the key parts of being easier to change (i.e. a better design) is being able to more easily find where the changes need to occur; this is what good naming contributes to.
+Notice we talking about classes here. A class tend to encapsulate and provide behavoir around state. Methods on them are generally involved in working with that state. In this state the methods are not accessing internal state. Why don’t we reify the idea of a rule? One of the key parts of being easier to change i.e. a better design is being able to more easily find where the changes need to occur; this is what good naming contributes to.
 
 ```ruby
   class LivingCellRules

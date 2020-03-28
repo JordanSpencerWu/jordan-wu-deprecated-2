@@ -20,7 +20,7 @@ Among men who rise to frame and leadership two types are recognizable, those who
 
 ### TALK, TALK, TALK
 
-Silence is the respite of the confident and the strong. They work quietly in the corner. They turn their inner turmoil into products and eventually to stillness. They ignore the impulse to seek recognition before they act. They don't talk much. Or mind the feeling that others, out there in public and enjoying the limelight, are somehow getting the better end of the deal. (They are not). They're too busy working to do anything else. When they do talk, it's _earned_.
+Silence is the respite of the confident and the strong. They work quietly in the corner. They turn their inner turmoil into products and eventually to stillness. They ignore the impulse to seek recognition before they act. They don't talk much. Or mind the feeling that others, out there in public and enjoying the limelight, are somehow getting the better end of the deal. They are not. They're too busy working to do anything else. When they do talk, it's _earned_.
 
 > Those who know do not speak.
 >
@@ -34,7 +34,7 @@ To be or to do? Whatever we seek to do in life, reality soon intrudes on our you
 
 ### BECOME A STUDENT
 
-To become great, one needs to have someone better that they can learn from, someone lesser who they can teach, and someone equal that they can challenge themselves against (plus, minus, and equal). To become great and stay great, they must all know what came before, what is going on now, and what comes next. They must be always learning. We must all become our own teachers, tutors, and critics. A student is self-critical and self-motivated always trying to improve. The act of being an eternal student kept these men and women humble.
+To become great, one needs to have someone better that they can learn from, someone lesser who they can teach, and someone equal that they can challenge themselves against plus, minus, and equal. To become great and stay great, they must all know what came before, what is going on now, and what comes next. They must be always learning. We must all become our own teachers, tutors, and critics. A student is self-critical and self-motivated always trying to improve. The act of being an eternal student kept these men and women humble.
 
 > "False ideas about yourself destroy you. For me, I always stay a student. That's what martial arts are about, and you have to use that humility as a tool. You put yourself beneath someone you trust."
 
@@ -42,7 +42,7 @@ To become great, one needs to have someone better that they can learn from, some
 
 Your passion may be the very thing holding you back from power or influence or accomplishment. Passion is seen in those who can tell you in great detail who they intend to become and what their success will be like, they might even be able to tell you specifically when they intend to achieve it or describe to you legitimate and sincere worries they have about the burdens of such accomplishments. They can tell you all the things they're going to do, or have even begun, but they cannot show you their progress. Because there rarely is any.
 
-Passion is _about_. (I am so passionate about \_**_.) What human require in our ascent is purpose and realism. Purpose is \_to_ and _for_. (I must do \_\_**. I was put here to accomplish \_**\_. I am willing to endure \_\_** for the sake of this.) Purpose is about pursuing something outside yourself as opposed to pleasuring yourself. More than purpose, we also need realism. How are we sure that what we're doing is moving us forward?
+Passion is _about_. I am so passionate about \_**_. What human require in our ascent is purpose and realism. Purpose is \_to_ and _for_. I must do \_\_**. I was put here to accomplish \_**\_. I am willing to endure \_\_** for the sake of this. Purpose is about pursuing something outside yourself as opposed to pleasuring yourself. More than purpose, we also need realism. How are we sure that what we're doing is moving us forward?
 
 ### FOLLOW THE CANVAS STRATEGY
 
@@ -54,7 +54,7 @@ Our own path, whatever we aspire to, will in some ways be defined by the amount 
 
 ### GET OUT OF YOUR OWN HEAD
 
-Real people preferring to live in passionate fiction than in actual reality. It is natural for any young, ambitious person (or simply someone whose ambition is young) to get excited and swept up by their thoughts and feeling. Especially in a world that tells us to keep and promote a "personal brand." We're required to tell stories in order to sell our work and our talents, and after enough time, forget where the line is that separates our fictions from reality. Ultimately this disability will paralyze us. Or it will become a wall between us and the information we need to do our jobs. Living clearly and presently takes courage. Don't live in the haze of the abstract, live with the tangible and real, even if it's uncomfortable.
+Real people preferring to live in passionate fiction than in actual reality. It is natural for any young, ambitious person or simply someone whose ambition is young to get excited and swept up by their thoughts and feeling. Especially in a world that tells us to keep and promote a "personal brand." We're required to tell stories in order to sell our work and our talents, and after enough time, forget where the line is that separates our fictions from reality. Ultimately this disability will paralyze us. Or it will become a wall between us and the information we need to do our jobs. Living clearly and presently takes courage. Don't live in the haze of the abstract, live with the tangible and real, even if it's uncomfortable.
 
 ### THE DANGER OF EARLY PRIDE
 
@@ -70,11 +70,11 @@ To be both a craftsman and an artist. To cultivate a product of labor and indust
 
 ## SUCCESS
 
-Sometimes ego is suppressed on the ascent. Sometimes an idea is so powerful or timing is so perfect (or one is born into wealth and power) that it can temporarily support or even compensate for a massive ego. The worst disease which can afflict business executives in their work is not as popularly supposed, alcoholism; it's egotism. Whether in middle management or top management, unbridled personal egotism blinds a man to the realities around him; more and more he comes to live in a world of his own imagination; and because he sincerely believes he can do no wrong, he becomes a menace to the men and women who have to work under his direction. Without the right values, success is brief. If we wish to do more than flash, if we wish to last, then it is time to understand how to battle this new form of ego and what values and principles are required in order to beat it.
+Sometimes ego is suppressed on the ascent. Sometimes an idea is so powerful or timing is so perfect or one is born into wealth and power that it can temporarily support or even compensate for a massive ego. The worst disease which can afflict business executives in their work is not as popularly supposed, alcoholism; it's egotism. Whether in middle management or top management, unbridled personal egotism blinds a man to the realities around him; more and more he comes to live in a world of his own imagination; and because he sincerely believes he can do no wrong, he becomes a menace to the men and women who have to work under his direction. Without the right values, success is brief. If we wish to do more than flash, if we wish to last, then it is time to understand how to battle this new form of ego and what values and principles are required in order to beat it.
 
 ### ALWAYS STAY A STUDENT
 
-As we first succeed, we will find ourselves in new situations, facing new problems. It takes a special kind of humility to grasp that you know less, even as you know and grasp more and more. With accomplishment comes a growing pressure to pretend that we know more than we do. To pretend we already know everything. That's the worry and the risk, thinking that we're set and secure, when in reality understanding and mastery is a fluid continual process. No matter what you've done up to this point, you better still be a student. If you're not still learning, you're already dying. Learn from _everyone_ and _everything_. An amateur is defensive. The professional finds learning (and even, occasionally, being shown up) to be enjoyable; they like being challenged and humbled, and engage in education as an ongoing and endless process.
+As we first succeed, we will find ourselves in new situations, facing new problems. It takes a special kind of humility to grasp that you know less, even as you know and grasp more and more. With accomplishment comes a growing pressure to pretend that we know more than we do. To pretend we already know everything. That's the worry and the risk, thinking that we're set and secure, when in reality understanding and mastery is a fluid continual process. No matter what you've done up to this point, you better still be a student. If you're not still learning, you're already dying. Learn from _everyone_ and _everything_. An amateur is defensive. The professional finds learning and even, occasionally, being shown up to be enjoyable; they like being challenged and humbled, and engage in education as an ongoing and endless process.
 
 ### DON'T TELL YOURSELF A STORY
 
@@ -116,7 +116,7 @@ Instead of letting power make us delusional and instead of taking what we have f
 
 ## FAILURE
 
-Almost always, your road to victory goes through a place called failure. In order to taste success again, we've got to understand what led to this moment (or these years) of difficulty, what went wrong and why. We must deal with the situation in order to move pass it. The way through, the way to rise again, requires a reorientation and increased self-awareness. Ego loves the idea that something fair or not. We don't need pity, our own or anyone else's, we need purpose, poise, and patience. The great failing is "to see yourself as more than you are and to value yourself at less than your true worth."
+Almost always, your road to victory goes through a place called failure. In order to taste success again, we've got to understand what led to this moment or these years of difficulty, what went wrong and why. We must deal with the situation in order to move pass it. The way through, the way to rise again, requires a reorientation and increased self-awareness. Ego loves the idea that something fair or not. We don't need pity, our own or anyone else's, we need purpose, poise, and patience. The great failing is "to see yourself as more than you are and to value yourself at less than your true worth."
 
 ### ALIVE TIME OR DEAD TIME
 

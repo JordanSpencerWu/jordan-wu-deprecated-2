@@ -6,7 +6,7 @@ seo-description: Code complete second edition - a practical handbook of software
 title: Unusual Data Types
 ---
 
-The term "structure" refers to data that's built up from other types. Deals with user-created structured data - _structs_ in C and C++ and _structures_ in Microsoft Visual Basic. Classes also sometimes perform as structures (when the class consists entirely of public data members with no public routines).
+The term "structure" refers to data that's built up from other types. Deals with user-created structured data - _structs_ in C and C++ and _structures_ in Microsoft Visual Basic. Classes also sometimes perform as structures when the class consists entirely of public data members with no public routines.
 
 Conceptually, every pointer consists of two parts: a location in memory and a knowledge of how to interpret the contents of that location. The location in memory is an address, the pointer itself contains only this address. To use the data the pointer points to, you have to go to that address and interpret the contents of memory at that location.
 

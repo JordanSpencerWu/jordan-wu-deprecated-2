@@ -28,7 +28,7 @@ The `||` operator produces the value of its first operand if the first operand i
 
 ##### Objects
 
-The simple types of JavaScript are numbers, strings, booleans (true and false), null, and undefined. All other values are objects.
+The simple types of JavaScript are numbers, strings, booleans true and false, null, and undefined. All other values are objects.
 
 The quotes around a property’s name in an object literal are optional if the name would be a legal JavaScript name and not a reserved word. Values can be retrieved from an object by wrapping a string expression in a [ ] suffix. If the string expression is a constant, and if it is a legal JavaScript name and not a reserved word, then the . notation can be used instead.
 
@@ -44,11 +44,11 @@ object.last_name // returns Wu
 
 Every object is linked to a prototype object from which it can inherit properties. If we try to retrieve a property value from an object, and if the object lacks the property name, then JavaScript attempts to retrieve the property value from the prototype object. And if that object is lacking the property, then it goes to its prototype, and so on until the process finally bottoms out with Object.prototype. Use `object.hasOwnProperty(variable)` to determine whether the property name is truly a member of the object or was found instead on the prototype chain and using `typeof` to exclude functions.
 
-Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype (which is itself linked to Object.prototype).
+Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype which is itself linked to Object.prototype.
 
 ##### Functions
 
-Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype (which is itself linked to Object.prototype).
+Objects produced from object literals are linked to Object.prototype. Function objects are linked to Function.prototype which is itself linked to Object.prototype.
 
 Functions can be defined inside of other functions. An inner function of course has access to its parameters and variables. An inner function also enjoys access to the parameters and variables of the functions it is nested within. The function object created by a function literal contains a link to that outer context. This is called _closure_.
 
@@ -62,7 +62,7 @@ JavaScript is a prototypal inheritance language. **The Constructor Invocation Pa
 
 **The Apply Invocation Pattern**, Because JavaScript is a functional object-oriented language, functions can have methods. The _apply_ method lets us construct an array of arguments to use to invoke a function. It also lets us choose the value of _this_.
 
-The _return_ statement can be used to cause the function to return early. When _return_ is executed, the function returns immediately without executing the remaining statements. A function always returns a value. If the return value is not specified, then _undefined_ is returned. If the function was invoked with the _new_ prefix and the _return_ value is not an object, then _this_ (the new object) is returned instead.
+The _return_ statement can be used to cause the function to return early. When _return_ is executed, the function returns immediately without executing the remaining statements. A function always returns a value. If the return value is not specified, then _undefined_ is returned. If the function was invoked with the _new_ prefix and the _return_ value is not an object, then _this_ the new object is returned instead.
 
 The _throw_ statement interrupts execution of the function. It should be given an exception object containing a _name_ property that identifies the type of the exception, and a descriptive _message_ property.
 

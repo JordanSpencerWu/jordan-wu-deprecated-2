@@ -3,7 +3,7 @@ author: [Steve McConnell]
 date: 2016-10-11
 description: This book contains many useful tips about software construction and best practices on creating clean code. A list of issues that can happen during software construction and how to avoid them by testing your code before writing them. The best part is the checklist at the end of every section containing useful items to check for during software construction.
 seo-description: Code complete second edition - a practical handbook of software construction by Steve McConnell notes.
-title: Measure Twice, Cut Once: Upstream Prerequiesities
+title: Measure Twice, Cut Once - Upstream Prerequiesities
 ---
 
 The carpenter's saying, "Measure twice, cut once" is highly relevant to the process before the construction part of software development. Before the construction process there are upstream activities such as architecture, design and project planning. These preparation activities goal is to reduce risk by focusing on improving requirements and project plans.

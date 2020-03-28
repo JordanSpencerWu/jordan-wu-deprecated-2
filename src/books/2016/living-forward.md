@@ -23,7 +23,7 @@ Some of the benefits of a Life Plan are **Clarifying Priorities**, enabling you 
 As we think about our legacy, we need to start with the end. Our days add up to a lifetime. At the end of that life, what will those closest to you say, what will they remember, how will they assess your legacy? Truth is, everyone is in the process of creating and leaving a legacy. Our legacy comprises the spiritual, intellectual, relational, vocational, and social capital we pass on.
 You start by writing your Eulogy, first by identifying your key relationships. Describe how you want to be remembered by each group of relationships. Be sure to make your legacy statement as compelling as you can.
 
-Life Accounts, your life is an interrelated collection of interests, responsibilities, dreams, and activities. This is divided into three circles - Circle of Being (solely on you in relation to yourself), Circle of Relating (collection of activities centered on you in relation to others), and Circle of Doing (collection of activities dealing with you in relation to your output). Write out your Life Accounts and remember that they are unique to you and are interrelated. Once you have your list of Life Accounts, determine the condition of each Life Account. They can be growing balance (more than you need), consistent balance (have what you need), or declining balance (less than you need). Your Life is a collection of accounts and each of them requires the right attentions.
+Life Accounts, your life is an interrelated collection of interests, responsibilities, dreams, and activities. This is divided into three circles - Circle of Being solely on you in relation to yourself, Circle of Relating collection of activities centered on you in relation to others, and Circle of Doing collection of activities dealing with you in relation to your output. Write out your Life Accounts and remember that they are unique to you and are interrelated. Once you have your list of Life Accounts, determine the condition of each Life Account. They can be growing balance more than you need, consistent balance have what you need, or declining balance less than you need. Your Life is a collection of accounts and each of them requires the right attentions.
 
 Remember we have to attend to ourselves first in order to be spiritually, emotionally, intellectually, and physically available to others.
 
@@ -35,9 +35,9 @@ Remember we have to attend to ourselves first in order to be spiritually, emotio
 4. Current Reality
 5. Specific Commitments
 
-Each section should be a series of bullets that are Specific, Measurable, Actionable, Realistic, and Time-bound (SMART).
+Each section should be a series of bullets that are Specific, Measurable, Actionable, Realistic, and Time-bound SMART.
 
-##### The day of creating your Life Plan (spend the whole day working on it)
+##### The day of creating your Life Plan spend the whole day working on it
 
 1. Check Your Attitude
 2. Remind Yourself of the Goal
