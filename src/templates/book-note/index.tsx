@@ -35,8 +35,8 @@ export default (props): ReactElement => {
           <a onClick={goBack} className="blog-post-back-link">
             Go back
           </a>
-          <h1>{title}</h1>
-          <small>{authorNames}</small>
+          <h1 className="book-note-title">{title}</h1>
+          <small>By {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </div>
