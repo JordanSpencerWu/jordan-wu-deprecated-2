@@ -8,6 +8,11 @@ const GATSBY_FILE_SYSTEM_NAMES = {
   pages: "pages",
 }
 
+const RELATIVE_DIRECTORIES = {
+  codeComplete: "2016/code-complete",
+  introToAlgorithms: "2016/introduction-to-algorithms",
+}
+
 async function createPages({ graphql, actions, getNode }) {
   const { createPage } = actions
   const {
@@ -112,16 +117,16 @@ function onCreateNode({ node, getNode, actions }) {
 
   if (type === `MarkdownRemark`) {
     const markdownNode = getNode(parentId)
-    const { sourceInstanceName } = markdownNode
+    const { sourceInstanceName, name, relativeDirectory } = markdownNode
 
     let slug, sourceInstanceNameValue
     switch (sourceInstanceName) {
       case GATSBY_FILE_SYSTEM_NAMES.blogs:
-        slug = `/blogs/${markdownNode.name}/`
+        slug = `/blogs/${name}/`
         sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.blogs
         break
       case GATSBY_FILE_SYSTEM_NAMES.books:
-        slug = `/books/${markdownNode.name}/`
+        slug = getBookSlug(name, relativeDirectory)
         sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.books
         break
       default:
@@ -138,6 +143,17 @@ function onCreateNode({ node, getNode, actions }) {
       name: `sourceInstanceName`,
       value: sourceInstanceNameValue,
     })
+  }
+}
+
+function getBookSlug(name, relativeDirectory) {
+  switch (relativeDirectory) {
+    case RELATIVE_DIRECTORIES.codeComplete:
+      return `/books/code-complete/${name}/`
+    case RELATIVE_DIRECTORIES.introToAlgorithms:
+      return `/books/introduction-to-algorithms/${name}/`
+    default:
+      return `/books/${name}/`
   }
 }
 
