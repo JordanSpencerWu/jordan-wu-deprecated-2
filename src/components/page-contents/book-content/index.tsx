@@ -44,7 +44,7 @@ function BookContent(props: BookContentProps): ReactElement {
     const authorText = author.join(`, `)
 
     return (
-      <div key={slug} className="book-content-book-container">
+      <div key={slug} className="book-content-book-container fadeIn">
         <Link to={slug}>
           <Image className="book-content-image" fluid={fluid} />
         </Link>
