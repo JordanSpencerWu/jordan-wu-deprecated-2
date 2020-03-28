@@ -58,7 +58,7 @@ async function createPages({ graphql, actions, getNode }) {
       parent: { id: parentId },
     } = node
     const markdownNode = getNode(parentId)
-    const { sourceInstanceName } = markdownNode
+    const { sourceInstanceName, name } = markdownNode
 
     switch (sourceInstanceName) {
       case GATSBY_FILE_SYSTEM_NAMES.blogs:
@@ -71,14 +71,39 @@ async function createPages({ graphql, actions, getNode }) {
         })
         break
       case GATSBY_FILE_SYSTEM_NAMES.books:
-        createPage({
-          path: slug,
-          component: path.resolve(`./src/templates/book-note/index.tsx`),
-          context: {
-            slug: slug,
-          },
-        })
-        break
+        switch (name) {
+          case `code-complete`:
+            createPage({
+              path: slug,
+              component: path.resolve(
+                `./src/templates/book-note/code-complete.tsx`
+              ),
+              context: {
+                slug: slug,
+              },
+            })
+            break
+          case `introduction-to-algorithms`:
+            createPage({
+              path: slug,
+              component: path.resolve(
+                `./src/templates/book-note/introduction-to-algorithms.tsx`
+              ),
+              context: {
+                slug: slug,
+              },
+            })
+            break
+          default:
+            createPage({
+              path: slug,
+              component: path.resolve(`./src/templates/book-note/index.tsx`),
+              context: {
+                slug: slug,
+              },
+            })
+            break
+        }
       default:
         break
     }

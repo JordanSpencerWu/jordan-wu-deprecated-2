@@ -34,17 +34,3 @@ We use **loop invariants** to help us understand why an algorithm is correct, it
 **Termination**: When the loop terminates, the invariant gives us a useful property that helps show that the algorithm is correct.
 
 A **median**, informally, is the "halfway point" of the set. When $n$ is odd, the median is unique, occuring at $i = (n + 1) / 2$. When $n$ is even, there are two medians, occurring at $i = n / 2$ and $i = n / 2 + 1$.
-
-##### Comparison Sorts Algorithms
-
-> These algorithms share an interesting property: _the sorted order they determine is based only on comparison between the input elements. Any comparison sort must make $\Theta(n \\ lg \\ n)$ comparisons in the worst case to sort $n$ elements._
-
-##### Sort Algorithms Linear Time
-
-##### Sort Algorithms Quadratic Time
-
-> The following two algorithms were not in the book, _bubble sort_ and _selection sort_. Both of these algorithms have the same average and worst case running time of $\Theta(n^2)$
-
-##### Elementary Data Structures
-
-> In this chapter, we examine the representation of dynamic sets by simple data structures that use pointers.
