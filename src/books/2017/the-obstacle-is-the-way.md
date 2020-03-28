@@ -22,31 +22,31 @@ It's simple: a method and framework for understanding, appreciating, and acting 
 When you have a goal, obstacles are actually teaching you how to get where you want to go, carving you a path.
 
 > Objective judgement, now at this very moment.
-
+>
 > Unselfish action, now at this very moment.
-
+>
 > Willing acceptance, now at this very moment of all external events.
-
+>
 > That's all you need.
 
 Overcoming obstacles is a discipline of three critical steps. It begins with how we look at our specific problems, our attitude or approach; then the energy and creativity with which we actively break them down and turn them into opportunities; finally, the cultivation and maintenance of an inner will that allows us to handle defeat and difficulty. **Perception**, **Action**, and the **Will**
 
 > First, see clearly.
-
+>
 > Next, act correctly.
-
+>
 > Finally, endure and accept the world as it is.
-
+>
 > see things for what they are.
-
+>
 > Do what we can.
-
+>
 > Endure and bear what we must
-
+>
 > What blocked the path now is a path.
-
+>
 > What once impeded action advances action.
-
+>
 > The Obstacle is the Way.
 
 ### Perception

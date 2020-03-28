@@ -7,9 +7,9 @@ title: The Dip - A Little Book That Teaches You When to Quit (And When to Stick)
 ---
 
 > Quit the wrong stuff.
-
+>
 > Stick with the right stuff.
-
+>
 > Have the guts to do one or the other.
 
 Winners win big because the marketplace loves a winner.

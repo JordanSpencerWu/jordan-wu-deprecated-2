@@ -19,7 +19,7 @@ Extroverts are better with passive employee while introverts are better with pro
 Introverts are uniquely good at leading initiative-takers because of their inclination to listen to others and lack of interest in dominating social situations, introverts are more likely to hear and implement suggestions.
 
 > Most inventors and engineers I’ve met are like me — they’re shy and they live in their heads. They’re almost like artists. In fact, the very best of them are artists. And artists work best alone — best outside of corporate environments, best where they can control an invention’s design without a lot of other people designing it for marketing or some other committee. I don’t believe anything really revolutionary has ever been invented by committee… I’m going to give you some advice that might be hard to take. That advice is: Work alone… Not on a committee. Not on a team.
-
+>
 > Stephen Wozniak
 
 Everyone can learn from: introverts prefer to work independently, and solitude can be a catalyst for innovation.
@@ -49,7 +49,7 @@ Talk is for communicating need-to-know information; quiet and introspection are 
 Aggressive power beats you up; soft power wins you over.
 
 > A man has many social selves as there are distinct groups of persons about whose opinion he cares. He generally shows a different side of himself to each of these different groups.
-
+>
 > William James
 
 Introverts are capable of acting like extroverts for the sake of work they consider important, people they love, or anything they value highly.
