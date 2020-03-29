@@ -88,7 +88,8 @@ function addClassName(props: LinkGetProps): object {
 
   const isCurrentBook = href === `/book-list` && pathname.includes(`/books`)
   const isCurrentBlog = href === `/blog` && pathname.includes(`/blogs`)
-  const isCurrentPage = href !== `/` && locationHref.includes(href)
+  const isCurrentPage =
+    href !== `/` && locationHref && locationHref.includes(href)
 
   return isCurrent || isCurrentBook || isCurrentBlog || isCurrentPage
     ? { className: "bottom-nav-link active disabled" }
