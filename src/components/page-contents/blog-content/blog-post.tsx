@@ -37,7 +37,9 @@ function BlogPost(props: BlogPostProps): ReactElement {
         </div>
       </div>
       <div className="blog-content-image-container">
-        <Image className="blog-content-image" fluid={fluid} />
+        <Link to={slug}>
+          <Image className="blog-content-image" fluid={fluid} />
+        </Link>
       </div>
     </div>
   )
