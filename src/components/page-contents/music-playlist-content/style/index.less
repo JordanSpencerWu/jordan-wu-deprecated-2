@@ -1,5 +1,8 @@
 @import "../../../style/index";
 
+@spotify-height: 78vh;
+@spotify-width: 380px;
+
 .music-playlist {
   &-container {
     display: flex;
@@ -21,14 +24,14 @@
     > iframe {
       border-width: 0;
       border-color: rgb(54, 36, 44);
-      height: 70vh;
-      width: 380px;
+      height: @spotify-height;
+      width: @spotify-width;
     }
   }
 
   &-loader-container {
-    height: 70vh;
-    width: 380px;
+    height: @spotify-height;
+    width: @spotify-width;
     background-color: #252525;
     display: flex;
     justify-content: center;
