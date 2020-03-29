@@ -64,6 +64,7 @@ function BookContent(props: BookContentProps): ReactElement {
 
   return (
     <section className="book-content-container">
+      <h1 className="book-content-title">My Book List</h1>
       <div className="book-content-search-container">
         <label>Search Books by Title or Author</label>
         <input
