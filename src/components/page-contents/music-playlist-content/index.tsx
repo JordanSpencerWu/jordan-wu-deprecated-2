@@ -1,26 +1,43 @@
-import React, { ReactElement, memo, useState } from "react"
+import React, { ReactElement, memo, useState, useEffect } from "react"
 
 import Loader from "./loader"
 import "./style/index.less"
 
 type MusicPlaylistContentProps = {}
 
+const LOADER_TIME = 3
+
 function MusicPlaylistContent(props: MusicPlaylistContentProps): ReactElement {
-  const [loading, setLoading] = useState(true)
+  const [spotifyLoading, setSpotifyLoading] = useState(true)
+  const [loadTimer, setLoadTimer] = useState(0)
+  const [timerDone, setTimerDone] = useState(false)
+
+  let timeout
+  useEffect(() => {
+    timeout = setTimeout(() => {
+      if (loadTimer < LOADER_TIME) {
+        setLoadTimer(loadTimer + 1)
+      } else {
+        setTimerDone(true)
+        clearTimeout(timeout)
+      }
+    }, 1000)
+  }, [loadTimer])
 
   const onLoad = () => {
-    setLoading(false)
+    setSpotifyLoading(false)
   }
+
+  const showLoader =
+    spotifyLoading === false && timerDone === true ? false : true
 
   return (
     <div className="music-playlist-container">
       <div className="music-playlist-content-container">
         <div className="music-playlist-spotify-container">
-          {loading && <Loader />}
+          {showLoader && <Loader />}
           <iframe
             src="https://open.spotify.com/embed/playlist/5Kuayyzz6WVOacD4ZDORvB"
-            width="300"
-            height="380"
             allow="encrypted-media"
             onLoad={onLoad}
           ></iframe>

@@ -18,6 +18,8 @@ type BookContentProps = {
   books: Array<Book>
 }
 
+const ENTER_KEYCODE = 13
+
 function BookContent(props: BookContentProps): ReactElement {
   const [searchTerm, setSeachTerm] = useState(EMPTY_STRING)
 
@@ -45,10 +47,10 @@ function BookContent(props: BookContentProps): ReactElement {
 
     return (
       <div key={slug} className="book-content-book-container fadeIn">
-        <Link to={slug}>
+        <Link to={slug} className="book-content-book-image-link">
           <Image className="book-content-image" fluid={fluid} />
         </Link>
-        <div>
+        <div className="book-content-info-container">
           <Link to={slug}>
             <h4 className="book-content-title">{title}</h4>
           </Link>
@@ -62,6 +64,20 @@ function BookContent(props: BookContentProps): ReactElement {
     )
   })
 
+  const handleSearchPress = event => {
+    const { key } = event
+
+    if (key === "Enter") {
+      event.target.blur()
+    }
+  }
+
+  const handleChange = event => {
+    const value = event.target.value
+
+    setSeachTerm(value)
+  }
+
   return (
     <section className="book-content-container">
       <h1 className="book-content-title">My Book List</h1>
@@ -70,7 +86,8 @@ function BookContent(props: BookContentProps): ReactElement {
         <input
           type="text"
           value={searchTerm}
-          onChange={e => setSeachTerm(e.target.value)}
+          onChange={e => handleChange(e)}
+          onKeyPress={e => handleSearchPress(e)}
         />
       </div>
       {renderBooks}

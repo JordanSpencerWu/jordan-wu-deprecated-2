@@ -31,7 +31,7 @@ export default (props): ReactElement => {
   return (
     <Layout>
       <SEO title={title} description={seo_description} />
-      <div className="book-note-container">
+      <div className="book-note-container fadeIn">
         <div className="book-note-content-container">
           <a onClick={goBack} className="blog-post-back-link">
             Go back

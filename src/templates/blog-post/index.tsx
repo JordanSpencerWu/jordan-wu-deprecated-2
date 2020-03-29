@@ -23,7 +23,7 @@ export default (props): ReactElement => {
   return (
     <Layout>
       <SEO title="Blog Post" description={seo_description} />
-      <div className="blog-post-container">
+      <div className="blog-post-container fadeIn">
         <div className="blog-post-content-container">
           <a onClick={goBack} className="blog-post-back-link">
             Go back
