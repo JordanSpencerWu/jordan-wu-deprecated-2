@@ -23,11 +23,26 @@
     align-items: stretch;
     display: flex;
     flex-direction: column;
+    height: 100%;
     min-height: 100vh;
+    position: relative;
+    width: 100%;
+
+    & > header {
+      height: @top-nav-height;
+    }
 
     & > main {
-      margin-top: @top-nav-height;
-      margin-bottom: @nav-bottom-height;
+      display: flex;
+      position: relative;
+    }
+
+    @media screen {
+      @media (max-width: @screen-sm) {
+        & > footer {
+          height: @nav-bottom-height;
+        }
+      }
     }
   }
 }

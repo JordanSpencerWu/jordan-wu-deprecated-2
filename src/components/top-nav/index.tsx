@@ -62,9 +62,16 @@ function TopNav(props: TopNavProps): ReactElement {
 }
 
 function addClassName(props: LinkGetProps): object {
-  const { isCurrent } = props
+  const {
+    isCurrent,
+    href,
+    location: { pathname },
+  } = props
 
-  return isCurrent
+  const isCurrentBook = href === `/book-list` && pathname.includes(`/books`)
+  const isCurrentBlog = href === `/blog` && pathname.includes(`/blogs`)
+
+  return isCurrent || isCurrentBook || isCurrentBlog
     ? { className: "top-nav-item-link active" }
     : { className: "top-nav-item-link" }
 }

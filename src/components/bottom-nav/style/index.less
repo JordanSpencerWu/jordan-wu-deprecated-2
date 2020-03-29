@@ -9,14 +9,14 @@
     color: @text-color;
     display: flex;
     height: @nav-bottom-height;
-    z-index: 5;
+    z-index: 1;
   }
 
   @media screen {
     @media (max-width: @screen-sm) {
       &-container {
         position: fixed;
-        z-index: 999;
+        z-index: 1;
         bottom: 0;
         width: 100%;
       }
@@ -30,14 +30,15 @@
   }
 
   &-link {
-    display: flex;
-    text-transform: capitalize;
-    justify-content: center;
     align-items: center;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: @nav-bottom-height;
     font-size: 18px;
+    height: @nav-bottom-height;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    z-index: 5;
 
     & > small {
       padding-top: 6px;
@@ -52,6 +53,10 @@
       & > svg {
         fill: @active-nav-color;
       }
+    }
+
+    &.disabled {
+      pointer-events: none;
     }
   }
 }

@@ -80,10 +80,17 @@ function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
 }
 
 function addClassName(props: LinkGetProps): object {
-  const { isCurrent } = props
+  const {
+    isCurrent,
+    href,
+    location: { pathname },
+  } = props
 
-  return isCurrent
-    ? { className: "bottom-nav-link active" }
+  const isCurrentBook = href === `/book-list` && pathname.includes(`/books`)
+  const isCurrentBlog = href === `/blog` && pathname.includes(`/blogs`)
+
+  return isCurrent || isCurrentBook || isCurrentBlog
+    ? { className: "bottom-nav-link active disabled" }
     : { className: "bottom-nav-link" }
 }
 

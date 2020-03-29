@@ -15,13 +15,6 @@ function MusicPlaylistContent(props: MusicPlaylistContentProps): ReactElement {
   return (
     <div className="music-playlist-container">
       <div className="music-playlist-content-container">
-        <p>
-          One habit I would love to keep, is to actively look for new songs
-          every week. I've been doing this for over ten years now and it has
-          always been a hobby of mine. Below is my current playlist that I
-          thought I'll share on my website since music has always been important
-          in my life.
-        </p>
         <div className="music-playlist-spotify-container">
           {loading && <Loader />}
           <iframe

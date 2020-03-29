@@ -50,6 +50,7 @@
     "prismjs": "^1.19.0",
     "react-helmet": "^5.2.1",
     "react-typography": "^0.16.19",
+    "three": "^0.115.0",
     "typography": "^0.16.19",
     "typography-theme-fairy-gates": "^0.16.19"
   },
