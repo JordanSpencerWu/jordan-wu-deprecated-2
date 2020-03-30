@@ -2,6 +2,7 @@ import React, { ReactElement, memo, useState } from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 import { Search } from "js-search"
+import { useSpring, animated } from "react-spring"
 
 import { SPACE, EMPTY_STRING } from "../../../utils/constants"
 import "./style/index.less"
@@ -22,6 +23,7 @@ const ENTER_KEYCODE = 13
 
 function BookContent(props: BookContentProps): ReactElement {
   const [searchTerm, setSeachTerm] = useState(EMPTY_STRING)
+  const spring = useSpring({ opacity: 1, from: { opacity: 0 } })
 
   const { books } = props
   const search = new Search("slug")
@@ -46,7 +48,11 @@ function BookContent(props: BookContentProps): ReactElement {
     const authorText = author.join(`, `)
 
     return (
-      <div key={slug} className="book-content-book-container fadeIn">
+      <animated.div
+        key={slug}
+        style={spring}
+        className="book-content-book-container"
+      >
         <Link to={slug} className="book-content-book-image-link">
           <Image className="book-content-image" fluid={fluid} />
         </Link>
@@ -60,7 +66,7 @@ function BookContent(props: BookContentProps): ReactElement {
             ...
           </Link>
         </div>
-      </div>
+      </animated.div>
     )
   })
 
@@ -90,7 +96,13 @@ function BookContent(props: BookContentProps): ReactElement {
           onKeyPress={e => handleSearchPress(e)}
         />
       </div>
-      {renderBooks}
+      {renderBooks.length > 0 ? (
+        renderBooks
+      ) : (
+        <div>
+          {`Sorry could not find the book with title or author of ${searchTerm}.`}
+        </div>
+      )}
     </section>
   )
 }

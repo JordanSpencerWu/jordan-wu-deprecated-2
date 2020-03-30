@@ -1,6 +1,7 @@
 import React, { ReactElement, useEffect } from "react"
 import { graphql } from "gatsby"
 import { navigate } from "@reach/router"
+import { useSpring, animated } from "react-spring"
 
 import SEO from "../../components/seo"
 import Layout from "../../components/layout"
@@ -8,6 +9,8 @@ import { SPACE } from "../../utils/constants"
 import "./style/index.less"
 
 export default (props): ReactElement => {
+  const spring = useSpring({ opacity: 1, from: { opacity: 0 } })
+
   const {
     data: {
       markdownRemark: {
@@ -31,7 +34,7 @@ export default (props): ReactElement => {
   return (
     <Layout>
       <SEO title={title} description={seo_description} />
-      <div className="book-note-container fadeIn">
+      <animated.div style={spring} className="book-note-container">
         <div className="book-note-content-container">
           <a onClick={goBack} className="blog-post-back-link">
             Go back
@@ -40,7 +43,7 @@ export default (props): ReactElement => {
           <small>By {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
         </div>
-      </div>
+      </animated.div>
     </Layout>
   )
 }

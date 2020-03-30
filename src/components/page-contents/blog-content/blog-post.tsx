@@ -1,6 +1,7 @@
 import React, { ReactElement, memo } from "react"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
+import { useSpring, animated } from "react-spring"
 
 type BlogPostProps = {
   date: string
@@ -12,11 +13,12 @@ type BlogPostProps = {
 }
 
 function BlogPost(props: BlogPostProps): ReactElement {
+  const spring = useSpring({ opacity: 1, from: { opacity: 0 } })
   const { date, fluid, excerpt, slug, title, words } = props
   const readTime = Math.ceil(words / 200)
 
   return (
-    <div className="blog-content-post-container fadeIn">
+    <animated.div className="blog-content-post-container" style={spring}>
       <div className="blog-content-post-article-container">
         <Link to={slug} className="blog-content-heading">
           {title}
@@ -41,7 +43,7 @@ function BlogPost(props: BlogPostProps): ReactElement {
           <Image className="blog-content-image" fluid={fluid} />
         </Link>
       </div>
-    </div>
+    </animated.div>
   )
 }
 
