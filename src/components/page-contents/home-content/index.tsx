@@ -9,7 +9,7 @@ type HomeContentProps = {}
 
 function HomeContent(props: HomeContentProps): ReactElement {
   const mouse = useRef([0, 0])
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent)
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(window.navigator.userAgent)
 
   return (
     <div className="home-content-container">
