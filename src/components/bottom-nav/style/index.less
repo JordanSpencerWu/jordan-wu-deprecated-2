@@ -1,0 +1,62 @@
+@import "../../style/index";
+
+@nav-bottom-icon-size: 24px;
+
+.bottom-nav {
+  &-container {
+    justify-content: space-between;
+    background-color: #2e4482;
+    color: @text-color;
+    display: flex;
+    height: @nav-bottom-height;
+    z-index: 1;
+  }
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      &-container {
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &-icon {
+    fill: @white;
+    width: @nav-bottom-icon-size;
+    height: @nav-bottom-icon-size;
+  }
+
+  &-link {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    height: @nav-bottom-height;
+    justify-content: center;
+    text-transform: capitalize;
+    width: 100%;
+    z-index: 5;
+
+    & > small {
+      padding-top: 6px;
+    }
+
+    &.active {
+      border-top-style: solid;
+      border-top-width: 1.5px;
+      color: @active-nav-color;
+      font-weight: 200;
+
+      & > svg {
+        fill: @active-nav-color;
+      }
+    }
+
+    &.disabled {
+      pointer-events: none;
+    }
+  }
+}
