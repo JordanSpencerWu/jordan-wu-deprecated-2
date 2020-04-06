@@ -1,0 +1,77 @@
+@import "../../../style/index";
+
+@spotify-height: 78vh;
+@spotify-width: 380px;
+
+.music-playlist {
+  &-container {
+    background-color: #080b2e;
+    background-image: linear-gradient(#080b2e, #202342, #393b57, #2e4482);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &-content-container {
+    margin-top: 20px;
+    width: 656px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-spotify-container {
+    position: relative;
+
+    > iframe {
+      border-width: 0;
+      border-color: rgb(54, 36, 44);
+      height: @spotify-height;
+      width: @spotify-width;
+      opacity: 0;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+  }
+
+  &-loader-container {
+    height: @spotify-height;
+    width: @spotify-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 5;
+
+    & > svg {
+      fill: @active-nav-color;
+    }
+  }
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      &-content-container {
+        width: 100vw;
+        margin-top: 0;
+      }
+
+      &-loader-container {
+        height: 100%;
+        width: 100%;
+      }
+
+      &-spotify-container {
+        height: 100%;
+        width: 100%;
+
+        > iframe {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

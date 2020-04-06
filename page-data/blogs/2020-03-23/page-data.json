@@ -1,1 +1,0 @@
-{"componentChunkName":"component---src-templates-blog-post-index-tsx","path":"/blogs/2020-03-23/","result":{"data":{"markdownRemark":{"html":"<p>This will be my second blog post using Gatsby!</p>","frontmatter":{"seo_description":"My second blog!","title":"Hello World 2!"}}},"pageContext":{"slug":"/blogs/2020-03-23/"}}}
