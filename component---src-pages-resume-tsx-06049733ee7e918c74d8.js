@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[9],{UTyF:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),i=t.n(a),s=t("PIHY"),u=t("Ac47");n.default=function(){return i.a.createElement(u.a,null,i.a.createElement(s.a,{title:"My Resume",description:"This is my resume."}),i.a.createElement("div",null,"Resume"))}}}]);
+//# sourceMappingURL=component---src-pages-resume-tsx-06049733ee7e918c74d8.js.map
