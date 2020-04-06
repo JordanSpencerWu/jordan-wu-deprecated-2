@@ -3,9 +3,11 @@
 .book-content {
   &-container {
     align-items: center;
+    background-color: #080b2e;
+    background-image: linear-gradient(#080b2e, #202342, #393b57, #2e4482);
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    padding-top: 20px;
     width: 100%;
   }
 
@@ -15,7 +17,7 @@
     margin-bottom: 20px;
 
     & small {
-      color: rgba(0, 0, 0, 0.54);
+      color: @white;
     }
   }
 
@@ -48,6 +50,7 @@
   }
 
   &-info-container {
+    position: relative;
     margin-left: 10px;
   }
 
@@ -71,7 +74,7 @@
     font-size: 18px;
     line-height: 24px;
     margin-top: 2px;
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 
   &-book-image-link {
@@ -79,10 +82,11 @@
   }
 
   &-link {
-    color: @black;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    color: @white;
     font-size: 42px;
-    padding: 5px;
-    float: right;
   }
 
   @media screen {

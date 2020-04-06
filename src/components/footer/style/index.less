@@ -3,13 +3,13 @@
 .footer {
   &-container {
     align-items: center;
-    justify-content: space-between;
     background-color: #2e4482;
     color: @text-color;
     display: flex;
-    padding: 30px @site-horizontal-padding;
+    justify-content: space-between;
+    padding: 30px 15px;
 
-    & > p {
+    & p {
       font-size: 16px;
       font-weight: 200;
       margin: 0;
@@ -43,20 +43,21 @@
   }
 
   &-link {
-    font-size: 18px;
     color: @active-nav-color;
+    font-size: 18px;
   }
 
   &-social-media-container {
+    bottom: 0;
     display: flex;
-    position: absolute;
     justify-content: center;
+    position: absolute;
     width: 100%;
 
     & a {
       font-size: 18px;
-      padding: 8px;
       margin: 0 4px;
+      padding: 8px;
     }
 
     & svg {

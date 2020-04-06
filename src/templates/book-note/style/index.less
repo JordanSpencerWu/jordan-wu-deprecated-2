@@ -2,6 +2,8 @@
 
 .book-note {
   &-container {
+    background-color: #080b2e;
+    background-image: linear-gradient(#080b2e, #202342, #393b57, #2e4482);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -15,14 +17,14 @@
     position: relative;
 
     & > a {
-      color: @black;
+      color: @white;
       text-decoration: underline;
       margin-bottom: 8px;
       text-transform: capitalize;
     }
 
     & small {
-      color: rgba(0, 0, 0, 0.54);
+      color: @white;
       margin-bottom: 10px;
     }
 
@@ -39,7 +41,7 @@
   }
 
   &-back-link {
-    color: @primary-color;
+    color: @white;
     position: absolute;
     font-size: 1.1rem;
     cursor: pointer;

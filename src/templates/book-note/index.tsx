@@ -34,16 +34,16 @@ export default (props): ReactElement => {
   return (
     <Layout>
       <SEO title={title} description={seo_description} />
-      <animated.div style={spring} className="book-note-container">
-        <div className="book-note-content-container">
-          <a onClick={goBack} className="blog-post-back-link">
+      <div className="book-note-container">
+        <animated.div style={spring} className="book-note-content-container">
+          <a onClick={goBack} className="book-note-back-link">
             Go back
           </a>
           <h1 className="book-note-title">{title}</h1>
           <small>By {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-        </div>
-      </animated.div>
+        </animated.div>
+      </div>
     </Layout>
   )
 }

@@ -8,7 +8,7 @@ function ResumeContent(props: ResumeContentProps): ReactElement {
   return (
     <div className="resume-content-container">
       <div className="resume-content-resume-container">
-        <h1>TODO ADD UPDATED RESUME HERE</h1>
+        <h3>Coming soon</h3>
       </div>
     </div>
   )

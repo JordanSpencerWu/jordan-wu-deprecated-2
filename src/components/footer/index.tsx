@@ -15,8 +15,24 @@ function Footer(props: FooterProps): ReactElement {
   const { githubUrl, linkedinUrl } = useSiteMetadata()
 
   return (
-    <div className="footer-container hide-on-screen-sm">
-      <p>{`Copyright © ${thisYear} Jordan Wu. All Rights Reserved`}</p>
+    <>
+      <div className="footer-container hide-on-screen-sm">
+        <div>
+          <p>{`Copyright © ${thisYear} Jordan Wu. All Rights Reserved`}</p>
+        </div>
+        <div className="footer-gatsby-link-container">
+          <p>
+            {`powered by `}
+            <a
+              className="footer-link"
+              href="https://www.gatsbyjs.org/"
+              target="_blank"
+            >
+              Gatsby
+            </a>
+          </p>
+        </div>
+      </div>
       <div className="footer-social-media-container">
         <a href={githubUrl} target="_blank">
           <GithubIcon />
@@ -25,19 +41,7 @@ function Footer(props: FooterProps): ReactElement {
           <LinkedInIcon />
         </a>
       </div>
-      <div className="footer-gatsby-link-container">
-        <p>
-          {`powered by `}
-          <a
-            className="footer-link"
-            href="https://www.gatsbyjs.org/"
-            target="_blank"
-          >
-            Gatsby
-          </a>
-        </p>
-      </div>
-    </div>
+    </>
   )
 }
 
