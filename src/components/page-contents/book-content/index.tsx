@@ -87,9 +87,6 @@ function BookContent(props: BookContentProps): ReactElement {
   return (
     <section className="book-content-container">
       <div className="book-content-search-container">
-        <h1 className="book-content-title">My Book List</h1>
-      </div>
-      <div className="book-content-search-container">
         <label>Search Books by Title or Author</label>
         <input
           type="text"
@@ -102,7 +99,7 @@ function BookContent(props: BookContentProps): ReactElement {
         renderBooks
       ) : (
         <div>
-          {`Sorry could not find the book with title or author of ${searchTerm}.`}
+          <p>{`Sorry could not find the book with title or author of ${searchTerm}.`}</p>
         </div>
       )}
     </section>
