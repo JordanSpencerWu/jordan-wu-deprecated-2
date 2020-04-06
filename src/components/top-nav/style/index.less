@@ -34,6 +34,7 @@
 
   &-logo {
     font-size: larger;
+    display: none;
   }
 
   &-item-logo-link {
@@ -53,13 +54,14 @@
     }
 
     &:hover:last-child {
-      background-color: shade(@primary-color, 30%);
+      opacity: 0.8;
     }
 
     &.active {
       border-bottom-style: solid;
       border-bottom-width: 2px;
       color: @active-nav-color;
+      font-size: 22px;
     }
   }
 
@@ -80,6 +82,10 @@
       &-container {
         justify-content: center;
         position: relative;
+      }
+
+      &-logo {
+        display: block;
       }
     }
   }

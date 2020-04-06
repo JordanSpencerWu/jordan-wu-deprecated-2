@@ -55,7 +55,7 @@ function random(min, max) {
 
 function changePosition(position) {
   const random = Math.round(Math.random())
-  const factor = 1 / 100000
+  const factor = 1 / 50000
 
   return random ? position * factor : position * -factor
 }
