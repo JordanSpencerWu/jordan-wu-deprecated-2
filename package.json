@@ -29,6 +29,7 @@
     "@types/react-helmet": "^5.0.15",
     "classnames": "^2.2.6",
     "gatsby-image": "^2.3.1",
+    "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-less": "^3.1.0",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
