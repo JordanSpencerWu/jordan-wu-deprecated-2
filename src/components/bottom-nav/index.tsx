@@ -9,8 +9,8 @@ import "./style/index.less"
 const BlogIcon = require("../../images/blog.svg")
 const BookListIcon = require("../../images/book-list.svg")
 const HomeIcon = require("../../images/home.svg")
-const ResumeIcon = require("../../images/resume.svg")
 const MusicPlaylistIcon = require("../../images/music-playlist.svg")
+const ResumeIcon = require("../../images/resume.svg")
 
 type BottomNavProps = {}
 
@@ -36,9 +36,9 @@ function BottomNav(props: BottomNavProps): ReactElement {
 }
 
 type BottomNavLinkProps = {
-  name: string
-  linkTo: string
   icon: ReactElement
+  linkTo: string
+  name: string
 }
 
 function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
@@ -81,13 +81,13 @@ function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
 
 function addClassName(props: LinkGetProps): object {
   const {
-    isCurrent,
     href,
+    isCurrent,
     location: { pathname, href: locationHref },
   } = props
 
-  const isCurrentBook = href === `/book-list` && pathname.includes(`/books`)
   const isCurrentBlog = href === `/blog` && pathname.includes(`/blogs`)
+  const isCurrentBook = href === `/book-list` && pathname.includes(`/books`)
   const isCurrentPage =
     href !== `/` && locationHref && locationHref.includes(href)
 

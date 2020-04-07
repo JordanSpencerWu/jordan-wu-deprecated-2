@@ -35,8 +35,8 @@
 
 header,
 footer {
-  position: relative;
   flex-shrink: 0;
+  position: relative;
 }
 
 main {
@@ -50,9 +50,9 @@ body {
 }
 
 p {
+  color: @white;
   font-size: 1.32rem;
   line-height: 1.9rem;
-  color: @white;
 }
 
 h1,
@@ -69,8 +69,8 @@ li {
 
 a {
   background-image: none;
-  text-shadow: none;
   color: @white;
+  text-shadow: none;
 }
 
 blockquote {
@@ -83,11 +83,11 @@ blockquote {
 */
 .gatsby-highlight {
   background-color: #2d2d2d;
+  border-left: 0.5em solid @active-nav-color;
   border-radius: 0.3em;
   margin: 0.5em 0;
-  padding: 1em;
   overflow: auto;
-  border-left: 0.5em solid @active-nav-color;
+  padding: 1em;
 
   & ~ p {
     margin-top: 20px;
@@ -102,28 +102,28 @@ blockquote {
   */
   pre[class*="language-"] {
     background-color: transparent;
-    margin: 0;
-    padding: 0;
-    overflow: initial;
     float: left;
+    margin: 0;
     min-width: calc(100% - 3em);
+    overflow: initial;
+    padding: 0;
 
     &.line-numbers {
       padding-left: 3em;
       padding-right: 1em;
 
       .line-numbers-rows {
-        right: calc(100% - 25px);
         left: unset !important;
+        right: calc(100% - 25px);
       }
 
       .gatsby-highlight-code-line {
         background-color: #455a64;
         display: block;
-        margin-right: -1em;
         margin-left: -1em;
-        padding-right: 1em;
+        margin-right: -1em;
         padding-left: 0.75em;
+        padding-right: 1em;
       }
     }
   }

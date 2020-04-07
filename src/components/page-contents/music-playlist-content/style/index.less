@@ -13,22 +13,22 @@
   }
 
   &-content-container {
-    margin-top: 20px;
-    width: 656px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 20px;
+    width: 656px;
   }
 
   &-spotify-container {
     position: relative;
 
     > iframe {
-      border-width: 0;
       border-color: rgb(54, 36, 44);
+      border-width: 0;
       height: @spotify-height;
-      width: @spotify-width;
       opacity: 0;
+      width: @spotify-width;
 
       &.active {
         opacity: 1;
@@ -37,13 +37,13 @@
   }
 
   &-loader-container {
-    height: @spotify-height;
-    width: @spotify-width;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
+    height: @spotify-height;
+    justify-content: center;
     position: absolute;
     top: 0;
+    width: @spotify-width;
     z-index: 5;
 
     & > svg {
@@ -54,8 +54,8 @@
   @media screen {
     @media (max-width: @screen-sm) {
       &-content-container {
-        width: 100vw;
         margin-top: 0;
+        width: 100vw;
       }
 
       &-loader-container {

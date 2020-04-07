@@ -1,8 +1,8 @@
 import React, { ReactElement } from "react"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
 import HomeContent from "../components/page-contents/home-content"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default (): ReactElement => {
   return (

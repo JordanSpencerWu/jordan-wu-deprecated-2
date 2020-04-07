@@ -1,10 +1,10 @@
 import React, { memo, ReactElement } from "react"
 
-import "./style/index.less"
 import { useSiteMetadata } from "../../hooks/use-site-metadata"
+import "./style/index.less"
 
-const LinkedInIcon = require("../../images/linkedin-square.svg")
 const GithubIcon = require("../../images/github-square.svg")
+const LinkedInIcon = require("../../images/linkedin-square.svg")
 
 type FooterProps = {}
 

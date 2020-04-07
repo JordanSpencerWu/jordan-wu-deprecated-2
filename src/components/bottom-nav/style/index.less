@@ -4,29 +4,29 @@
 
 .bottom-nav {
   &-container {
-    justify-content: space-between;
     background-color: #2e4482;
     color: @text-color;
     display: flex;
     height: @nav-bottom-height;
+    justify-content: space-between;
     z-index: 1;
   }
 
   @media screen {
     @media (max-width: @screen-sm) {
       &-container {
-        position: fixed;
-        z-index: 1;
         bottom: 0;
+        position: fixed;
         width: 100%;
+        z-index: 1;
       }
     }
   }
 
   &-icon {
     fill: @white;
-    width: @nav-bottom-icon-size;
     height: @nav-bottom-icon-size;
+    width: @nav-bottom-icon-size;
   }
 
   &-link {

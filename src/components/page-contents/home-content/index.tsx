@@ -2,12 +2,12 @@ import React, { ReactElement, memo } from "react"
 import { Canvas } from "react-three-fiber"
 import { Uncharted2ToneMapping, Color } from "three"
 
-import "./style/index.less"
 import Stars from "./stars"
+import "./style/index.less"
 
+const far = 1000
 const fov = 75
 const near = 0.01
-const far = 1000
 
 type HomeContentProps = {}
 

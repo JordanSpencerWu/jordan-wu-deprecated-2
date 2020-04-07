@@ -1,9 +1,9 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
 
-import SEO from "../components/seo"
-import Layout from "../components/layout"
 import BookContent from "../components/page-contents/book-content"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default (props): ReactElement => {
   const {

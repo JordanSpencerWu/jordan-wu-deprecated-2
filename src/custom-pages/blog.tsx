@@ -1,11 +1,9 @@
 import React, { ReactElement } from "react"
 import { graphql } from "gatsby"
-import Image from "gatsby-image"
 
 import SEO from "../components/seo"
 import Layout from "../components/layout"
-import { BlogContent } from "../components/page-contents"
-import blogPost from "../components/page-contents/blog-content/blog-post"
+import BlogContent from "../components/page-contents/blog-content"
 
 export default (props): ReactElement => {
   const { data } = props

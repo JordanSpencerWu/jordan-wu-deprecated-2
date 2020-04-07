@@ -2,8 +2,8 @@ import React, { ReactElement, useEffect } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import { navigate } from "@reach/router"
 
-import SEO from "../../components/seo"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import { SPACE } from "../../utils/constants"
 import "./style/index.less"
 

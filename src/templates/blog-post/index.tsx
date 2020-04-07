@@ -3,8 +3,8 @@ import { graphql } from "gatsby"
 import { navigate } from "@reach/router"
 import { useSpring, animated } from "react-spring"
 
-import SEO from "../../components/seo"
 import Layout from "../../components/layout"
+import SEO from "../../components/seo"
 import "./style/index.less"
 
 export default (props): ReactElement => {

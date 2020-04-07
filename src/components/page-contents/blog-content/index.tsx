@@ -6,10 +6,10 @@ import BlogPost from "./blog-post"
 type BlogPost = {
   date: string
   excerpt: string
+  fluid: any
   slug: string
   title: string
   words: number
-  fluid: any
 }
 
 type BlogContentProps = {
