@@ -6,10 +6,10 @@ import { useSpring, animated } from "react-spring"
 type BlogPostProps = {
   date: string
   excerpt: string
+  fluid: any
   slug: string
   title: string
   words: number
-  fluid: any
 }
 
 function BlogPost(props: BlogPostProps): ReactElement {
@@ -33,10 +33,10 @@ function BlogPost(props: BlogPostProps): ReactElement {
               <span>{readTime} min read</span>
             </div>
           </div>
-          <Link to={slug} className="blog-content-more-link">
-            ...
-          </Link>
         </div>
+        <Link to={slug} className="blog-content-more-link">
+          ...
+        </Link>
       </div>
       <div className="blog-content-image-container">
         <Link to={slug}>

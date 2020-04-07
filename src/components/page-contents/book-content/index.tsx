@@ -10,9 +10,9 @@ import "./style/index.less"
 type Book = {
   author: Array<string>
   description: string
+  fluid: any
   slug: string
   title: string
-  fluid: any
 }
 
 type BookContentProps = {
