@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react"
+import React, { ReactElement, useEffect } from "react"
 import { graphql } from "gatsby"
 import { navigate } from "@reach/router"
 import { useSpring, animated } from "react-spring"
@@ -9,6 +9,11 @@ import "./style/index.less"
 
 export default (props): ReactElement => {
   const spring = useSpring({ opacity: 1, from: { opacity: 0 } })
+
+  useEffect(() => {
+    // @ts-ignore
+    window.MathJax && window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub])
+  })
 
   const {
     data: {
