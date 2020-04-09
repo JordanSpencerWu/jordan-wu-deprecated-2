@@ -12,10 +12,14 @@ The physician's duty is not to stave of death or return patient to their old liv
 
 > You that seek what life is in death,
 >
-> Now find it air that once was break.
+> Now find it air that once was breath.
 >
 > New names unknown, old names gone:
 >
-> Till time end bodies, but souls none But steps to your enternity.
+> Till time end bodies, but souls none.
+>
+> Reader! then make time, while you be,
+>
+> But steps to your eternity.
 >
 > by BARON BROOKE FULKE GREVILLE
