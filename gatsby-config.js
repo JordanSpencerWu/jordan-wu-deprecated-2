@@ -88,10 +88,17 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
           `gatsby-remark-mathjax`,
           {
             resolve: `gatsby-remark-prismjs`,
@@ -106,7 +113,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
 }
