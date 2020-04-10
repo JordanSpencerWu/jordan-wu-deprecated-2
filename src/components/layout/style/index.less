@@ -81,6 +81,20 @@ p > code[class*="language-text"] {
   color: @active-nav-color;
 }
 
+li > code[class*="language-text"] {
+  color: @active-nav-color;
+}
+
+td,
+th {
+  border: 2px solid @active-nav-color;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0.96667rem;
+}
+
 /**
 * Add back the container background-color, border-radius, padding, margin
 * and overflow that we removed from <pre>.
