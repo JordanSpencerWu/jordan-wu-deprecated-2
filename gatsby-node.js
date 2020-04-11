@@ -52,6 +52,27 @@ async function createPages({ graphql, actions, getNode }) {
     }
   `)
 
+  const {
+    data: {
+      allMdx: { edges: allMdxNodes },
+    },
+  } = await graphql(`
+    query allMdx {
+      allMdx {
+        edges {
+          node {
+            fields {
+              slug
+            }
+            parent {
+              id
+            }
+          }
+        }
+      }
+    }
+  `)
+
   allMarkdownRemarkNodes.forEach(({ node }) => {
     const {
       fields: { slug },
@@ -131,9 +152,33 @@ async function createPages({ graphql, actions, getNode }) {
         break
     }
   })
+
+  allMdxNodes.forEach(({ node }) => {
+    const {
+      fields: { slug },
+      parent: { id: parentId },
+    } = node
+    const markdownNode = getNode(parentId)
+    const { sourceInstanceName } = markdownNode
+
+    switch (sourceInstanceName) {
+      case GATSBY_FILE_SYSTEM_NAMES.blogs:
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/blog-post/mdx.tsx`),
+          context: {
+            slug: slug,
+          },
+        })
+        break
+      default:
+        break
+    }
+  })
 }
 
 function onCreateNode({ node, getNode, actions }) {
+  let slug, sourceInstanceNameValue
   const {
     internal: { type },
     parent: parentId,
@@ -144,7 +189,6 @@ function onCreateNode({ node, getNode, actions }) {
     const markdownNode = getNode(parentId)
     const { sourceInstanceName, name, relativeDirectory } = markdownNode
 
-    let slug, sourceInstanceNameValue
     switch (sourceInstanceName) {
       case GATSBY_FILE_SYSTEM_NAMES.blogs:
         slug = `/blogs/${name}/`
@@ -157,18 +201,32 @@ function onCreateNode({ node, getNode, actions }) {
       default:
         break
     }
-
-    createNodeField({
-      node,
-      name: `slug`,
-      value: slug,
-    })
-    createNodeField({
-      node,
-      name: `sourceInstanceName`,
-      value: sourceInstanceNameValue,
-    })
   }
+
+  if (type === `Mdx`) {
+    const mdxNode = getNode(parentId)
+    const { sourceInstanceName, name } = mdxNode
+
+    switch (sourceInstanceName) {
+      case GATSBY_FILE_SYSTEM_NAMES.blogs:
+        slug = `/blogs/${name}/`
+        sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.blogs
+        break
+      default:
+        break
+    }
+  }
+
+  createNodeField({
+    node,
+    name: `slug`,
+    value: slug,
+  })
+  createNodeField({
+    node,
+    name: `sourceInstanceName`,
+    value: sourceInstanceNameValue,
+  })
 }
 
 function getBookSlug(name, relativeDirectory) {

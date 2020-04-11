@@ -8,8 +8,8 @@ import BlogContent from "../components/page-contents/blog-content"
 export default (props): ReactElement => {
   const { data } = props
   const {
-    allMarkdownRemark: { edges: blogPostsNodes },
-    allFile: { edges: blogImagesNodes },
+    blogs: { edges: blogPostsNodes },
+    images: { edges: blogImagesNodes },
   } = data
 
   const imageFluids = blogImagesNodes.map(getImageFluid)
@@ -39,13 +39,22 @@ function getImageFluid(edge) {
 
 function getBlogPost(edge) {
   const {
-    node: {
-      frontmatter: { date, title },
-      fields: { slug },
-      excerpt,
-      wordCount: { words },
-    },
+    node: { childMarkdownRemark, childMdx },
   } = edge
+
+  let node
+  if (childMarkdownRemark) {
+    node = childMarkdownRemark
+  } else {
+    node = childMdx
+  }
+
+  const {
+    frontmatter: { date, title },
+    fields: { slug },
+    excerpt,
+    wordCount: { words },
+  } = node
 
   return {
     date,
@@ -58,30 +67,49 @@ function getBlogPost(edge) {
 
 export const blogPostsQuery = graphql`
   query blogPosts($limit: Int!) {
-    allMarkdownRemark(
-      filter: { fields: { sourceInstanceName: { eq: "blogs" } } }
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: $limit
+    blogs: allFile(
+      filter: {
+        sourceInstanceName: { eq: "blogs" }
+        extension: { regex: "/(md|mdx)/" }
+      }
+      sort: { order: DESC, fields: name }
     ) {
       edges {
         node {
           id
-          frontmatter {
-            date(formatString: "MMMM DD")
-            title
+          childMarkdownRemark {
+            id
+            frontmatter {
+              date(formatString: "MMMM DD")
+              title
+            }
+            fields {
+              slug
+            }
+            excerpt(pruneLength: 110)
+            wordCount {
+              words
+            }
           }
-          fields {
-            slug
-          }
-          excerpt(pruneLength: 110)
-          wordCount {
-            words
+          childMdx {
+            id
+            frontmatter {
+              date(formatString: "MMMM DD")
+              title
+            }
+            fields {
+              slug
+            }
+            excerpt(pruneLength: 110)
+            wordCount {
+              words
+            }
           }
         }
       }
     }
 
-    allFile(
+    images: allFile(
       filter: {
         sourceInstanceName: { eq: "images" }
         relativeDirectory: { eq: "blogs" }
