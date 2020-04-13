@@ -17,7 +17,6 @@ type LayoutProps = {
 function Layout(props: LayoutProps): ReactElement {
   const { children } = props
 
-  console.log(shortcodes)
   return (
     <MDXProvider components={shortcodes}>
       <div className="layout-container">

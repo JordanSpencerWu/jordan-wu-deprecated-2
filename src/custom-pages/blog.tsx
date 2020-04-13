@@ -110,10 +110,7 @@ export const blogPostsQuery = graphql`
     }
 
     images: allFile(
-      filter: {
-        sourceInstanceName: { eq: "images" }
-        relativeDirectory: { eq: "blogs" }
-      }
+      filter: {sourceInstanceName: {eq: "images"}, relativeDirectory: {regex: "/blogs/*/"}}
       sort: { fields: name, order: DESC }
       limit: $limit
     ) {
