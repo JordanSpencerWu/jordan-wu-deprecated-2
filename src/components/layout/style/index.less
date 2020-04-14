@@ -85,6 +85,16 @@ li > code[class*="language-text"] {
   color: @active-nav-color;
 }
 
+table {
+  overflow-x: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    display: block;
+  }
+}
+
 td,
 th {
   border: 2px solid @active-nav-color;
@@ -105,6 +115,7 @@ td:first-child {
   border-radius: 0.3em;
   margin: 0.5em 0;
   overflow: auto;
+  overflow: hidden;
   padding: 1em;
 
   & ~ p {
