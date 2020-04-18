@@ -138,5 +138,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-feed`,
   ],
 }
