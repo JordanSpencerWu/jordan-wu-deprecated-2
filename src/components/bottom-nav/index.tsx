@@ -10,7 +10,7 @@ const BlogIcon = require("../../images/blog.svg")
 const BookListIcon = require("../../images/book-list.svg")
 const HomeIcon = require("../../images/home.svg")
 const MusicPlaylistIcon = require("../../images/music-playlist.svg")
-const ResumeIcon = require("../../images/resume.svg")
+const AboutIcon = require("../../images/about.svg")
 
 type BottomNavProps = {}
 
@@ -62,9 +62,9 @@ function getBottomNavLink(navLink: NavLinkProps): BottomNavLinkProps {
       navName = "playlist"
       icon = <MusicPlaylistIcon className="bottom-nav-icon" />
       break
-    case "resume":
-      navName = "resume"
-      icon = <ResumeIcon className="bottom-nav-icon" />
+    case "about":
+      navName = "about"
+      icon = <AboutIcon className="bottom-nav-icon" />
       break
     default:
       navName = EMPTY_STRING

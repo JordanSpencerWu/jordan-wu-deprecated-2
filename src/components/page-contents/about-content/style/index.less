@@ -1,6 +1,6 @@
 @import "../../../style/index";
 
-.resume-content {
+.about-content {
   &-container {
     align-items: center;
     background-color: #080b2e;
@@ -11,10 +11,22 @@
     width: 100%;
   }
 
-  &-resume-container {
-    display: flex;
+  &-context-container {
     margin-bottom: 20px;
-    text-align: center;
     width: 610px;
+  }
+
+  &-heading {
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 0;
+  }
+
+  @media screen {
+    @media (max-width: @screen-md) {
+      &-context-container {
+        width: 92vw;
+      }
+    }
   }
 }

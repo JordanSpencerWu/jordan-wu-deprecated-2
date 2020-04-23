@@ -8,7 +8,7 @@ const MENU_LINKS_ORDER = [
   "blog",
   "book-list",
   "music-playlist",
-  "resume",
+  "about",
 ]
 
 export type NavLinkProps = {
