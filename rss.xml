@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jordan Wu]]></title><description><![CDATA[This is my personal website made using Gatsby.]]></description><link>https://jordanspencerwu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 29 Apr 2020 05:30:14 GMT</lastBuildDate><item><title><![CDATA[Chapter 1T - THEORY INTRODUCTION TO SOUND SYNTHESIS]]></title><description><![CDATA[Sound synthesis means the electronic generation of sound. Signal processing means the electronic modification of a sound. Frequency…]]></description><link>https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1T-theory/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1T-theory/</guid><pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Sound synthesis&lt;/strong&gt; means the electronic generation of sound.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jordan Wu]]></title><description><![CDATA[This is my personal website made using Gatsby.]]></description><link>https://jordanspencerwu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 01 May 2020 04:37:04 GMT</lastBuildDate><item><title><![CDATA[Chapter 1P - SOUND SYNTHESIS WITH MAX]]></title><description><![CDATA[LIST OF PRINCIPLE COMMANDS Open a new Max document <Command-n/Control-n> Switch between edit mode and performance mode <Command-e/Control-e…]]></description><link>https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1P-sound-synthesis-with-max/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1P-sound-synthesis-with-max/</guid><pubDate>Thu, 30 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;LIST OF PRINCIPLE COMMANDS&lt;/h4&gt;
+&lt;h5&gt;Open a new Max document&lt;/h5&gt;
+&lt;p&gt;&amp;#x3C;Command-n/Control-n&gt;&lt;/p&gt;
+&lt;h5&gt;Switch between edit mode and performance mode&lt;/h5&gt;
+&lt;p&gt;&amp;#x3C;Command-e/Control-e&gt;&lt;/p&gt;
+&lt;h5&gt;View the Max Console&lt;/h5&gt;
+&lt;p&gt;&amp;#x3C;Command-m/Control-m&gt;&lt;/p&gt;
+&lt;h5&gt;Cancel an in-progress patch cord when &quot;Segmented Patch Chords&quot; is selected&lt;/h5&gt;
+&lt;p&gt;&amp;#x3C;Command-click/Control-click&gt;&lt;/p&gt;
+&lt;h5&gt;Align the objects in a patcher window&lt;/h5&gt;
+&lt;p&gt;Select + &amp;#x3C;Command-y/Control-Shift-a&gt;&lt;/p&gt;
+&lt;h5&gt;Open the inspector for an object&lt;/h5&gt;
+&lt;p&gt;Select + &amp;#x3C;Command-i/Control-i&gt;&lt;/p&gt;
+&lt;h5&gt;Make floating yellow hints appear when you pass the mouse over an object&lt;/h5&gt;
+&lt;p&gt;Hints are entered via the inspector: in the Hint attribute of the inspector, enter hint text&lt;/p&gt;
+&lt;h5&gt;Make annotations appear in the Clue Window when you pass the mouse over an object&lt;/h5&gt;
+&lt;p&gt;Annotations are entered via the inspector: in the Annotation attribute of the inspector, enter annotation text&lt;/p&gt;
+&lt;h5&gt;Copy objects or groups of objects from one patcher to another&lt;/h5&gt;
+&lt;p&gt;Select + &amp;#x3C;Command-c/Control-c&gt; + click on second patcher + &amp;#x3C;Command-v/Control-v&gt;&lt;/p&gt;
+&lt;h5&gt;Select multiple patch cords at once&lt;/h5&gt;
+&lt;p&gt;&lt;Alt-drag&gt; across patch cords to be selected&lt;/p&gt;
+&lt;h5&gt;Copy an object&lt;/h5&gt;
+&lt;p&gt;Holding the &lt;Alt&gt; key down, click on an object and drag the &quot;tear-off&quot; copy to a new location&lt;/p&gt;
+&lt;h5&gt;Select and copy a group of objects&lt;/h5&gt;
+&lt;p&gt;&lt;Alt-drag&gt; across the group to select it + restrike &lt;Alt&gt; and drag, &quot;tearing off&quot; new copies&lt;/p&gt;
+&lt;h5&gt;Select an audio driver&lt;/h5&gt;
+&lt;p&gt;Options -&gt; Audio Status&lt;/p&gt;
+&lt;h5&gt;Turn on segmented patch cords&lt;/h5&gt;
+&lt;p&gt;Options -&gt; Segmented Patch Cords
+Every click creates a new segment, with the final click falling on the inlet to be connected&lt;/p&gt;
+&lt;h5&gt;Create new objects with the press of a key&lt;/h5&gt;
+&lt;p&gt;Within a patcher:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;n = new object box
+b = new button
+t = new toggle
+i = new integer number box
+f = new float number box
+m = new message box
+c = new comment box&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;Open the help patch for a single object&lt;/h5&gt;
+&lt;p&gt;In edit mode, Alt-click on an object&lt;/p&gt;
+&lt;h5&gt;Open a File Browser&lt;/h5&gt;
+&lt;p&gt;&amp;#x3C;Command-b/Control-b&gt;&lt;/p&gt;
+&lt;h5&gt;Hide or unhide an object or a patch cord when it is in performance mode&lt;/h5&gt;
+&lt;p&gt;In edit mode, select objects by clicking or using &lt;Alt-click&gt; + &amp;#x3C;Command-k/Control-k&gt; to hide, or &amp;#x3C;Command-l/Control-l&gt; to unhide selected objects&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Chapter 1T - THEORY INTRODUCTION TO SOUND SYNTHESIS]]></title><description><![CDATA[Sound synthesis means the electronic generation of sound. Signal processing means the electronic modification of a sound. Frequency…]]></description><link>https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1T-theory/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/electronic-music-and-sound-design/chapter-1T-theory/</guid><pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;strong&gt;Sound synthesis&lt;/strong&gt; means the electronic generation of sound.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Signal processing&lt;/strong&gt; means the electronic modification of a sound.&lt;/p&gt;
 &lt;p&gt;Frequency, amplitude and waveform are three basic parameters of sound.&lt;/p&gt;
 &lt;h4&gt;Each one of these parameters influences how we perceive sound:&lt;/h4&gt;
