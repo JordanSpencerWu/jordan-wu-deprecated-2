@@ -10,6 +10,7 @@ import "./style/index.less"
 export default (): ReactElement => {
   const {
     markdownRemark: {
+      html,
       frontmatter: { author, seo_description, title },
     },
     allMarkdownRemark: { edges: electronicMusicAndSoundDesignNodes },
@@ -76,6 +77,7 @@ export default (): ReactElement => {
           </a>
           <h1>{title}</h1>
           <small>{authorNames}</small>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
           <h3>Chapters</h3>
           {renderChapters}
         </div>
