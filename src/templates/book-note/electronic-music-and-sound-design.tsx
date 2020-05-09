@@ -76,7 +76,7 @@ export default (): ReactElement => {
             Go back
           </a>
           <h1>{title}</h1>
-          <small>{authorNames}</small>
+          <small>by {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
           <h3>Chapters</h3>
           {renderChapters}
