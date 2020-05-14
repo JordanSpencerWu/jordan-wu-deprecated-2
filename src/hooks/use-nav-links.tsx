@@ -38,6 +38,7 @@ export const useNavLinks = (): Array<NavLinkProps> => {
   const navLinks = allPagesNodes
     .map(getPageName)
     .sort(comparePageNames)
+    .filter(pageName => pageName !== "book-list")
     .map(getNavLink)
     .filter(Boolean)
 
