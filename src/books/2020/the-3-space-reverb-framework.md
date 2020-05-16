@@ -1,7 +1,7 @@
 ---
 author: [Nathan Nyquist]
 date: 2020-05-13
-description: TODO
+description: Reverb is a great way to create natural sounding instruments. When using this audio effect focus on where the sound is in the mix.
 seo-description: The 3-space reverb framework by Nathan Nyquist notes.
 title: THE 3-SPACE REVERB FRAMEWORK
 ---
