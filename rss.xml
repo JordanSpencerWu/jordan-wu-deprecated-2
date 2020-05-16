@@ -1,4 +1,131 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jordan Wu]]></title><description><![CDATA[This is my personal website made using Gatsby.]]></description><link>https://jordanspencerwu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 14 May 2020 04:34:59 GMT</lastBuildDate><item><title><![CDATA[THE 3-SPACE REVERB FRAMEWORK]]></title><description><![CDATA[Testing]]></description><link>https://jordanspencerwu.github.io/books/the-3-space-reverb-framework/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/the-3-space-reverb-framework/</guid><pubDate>Wed, 13 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Testing&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MASTERING MULTI-BAND COMPRESSION]]></title><description><![CDATA[A multiband compressor is really just an EQ that has a regular single-band compressor attached to each EQ band. Compression is just a way…]]></description><link>https://jordanspencerwu.github.io/books/mastering-multi-band-compression/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/mastering-multi-band-compression/</guid><pubDate>Sat, 09 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A multiband compressor is really just an EQ that has a regular single-band compressor attached to each EQ band.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Jordan Wu]]></title><description><![CDATA[This is my personal website made using Gatsby.]]></description><link>https://jordanspencerwu.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 16 May 2020 03:57:28 GMT</lastBuildDate><item><title><![CDATA[THE BUS COMPRESSION FRAMEWORK]]></title><description><![CDATA[Bus compression does two things: Glue instruments together Allow us to manipulate the overall transient and volume characteristics of entire…]]></description><link>https://jordanspencerwu.github.io/books/the-bus-comperssion-framework/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/the-bus-comperssion-framework/</guid><pubDate>Fri, 15 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Bus compression does two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Glue instruments together&lt;/li&gt;
+&lt;li&gt;Allow us to manipulate the overall transient and volume characteristics of entire groups.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Bus compression or pocket compression is a group of instruments that are all being affected by the same compressor.&lt;/p&gt;
+&lt;p&gt;&quot;Mixing in the pocket&quot; is the ability to create zones, or distinct spaces in your mix.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Frequency Pocket = EQing&lt;/li&gt;
+&lt;li&gt;Compression Pocket = Bus Compression&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Front = Contrast&lt;/p&gt;
+&lt;p&gt;Back = Blend&lt;/p&gt;
+&lt;p&gt;Front Pocket = Slower Attack and Faster Release&lt;/p&gt;
+&lt;p&gt;Back Pocket = Faster Attack and Slower Release&lt;/p&gt;
+&lt;h4&gt;5 types of buses/groups&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Leads/Vox - Front Pocket (Glue + Depth)&lt;/li&gt;
+&lt;li&gt;Pads/Keys - Back Pocket (Glue + Depth)&lt;/li&gt;
+&lt;li&gt;Drum Bas - Drum Pocket (Glue + Relative Positioning)&lt;/li&gt;
+&lt;li&gt;Bass Bus - Bass Pocket (Glue + Relative Positioning)&lt;/li&gt;
+&lt;li&gt;Aux Bus - Auxiliary Pocket (Glue + Relative Positioning)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Back Pocket&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Send all the instruments you want positioned in the Back Space of your mix to this bus/group.&lt;/li&gt;
+&lt;li&gt;Put your desired compressor on the group (SSL Compressor).&lt;/li&gt;
+&lt;li&gt;Set Attack .1 - 3ms.&lt;/li&gt;
+&lt;li&gt;Set Release .3 - .6sec.&lt;/li&gt;
+&lt;li&gt;Set Ratio: 2:1&lt;/li&gt;
+&lt;li&gt;Bring the Threshold down until you have 1 - 2db of gain reduction.&lt;/li&gt;
+&lt;li&gt;Adjust the makeup gain if you feel it&apos;s necessary to restore any lost volume.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Front Pocket&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Send all the instruments you want positioned in the Front Space of your mix to this bus/group.&lt;/li&gt;
+&lt;li&gt;Put your desired compressor on the group (SSL Compressor).&lt;/li&gt;
+&lt;li&gt;Set Attack 10 - 30ms.&lt;/li&gt;
+&lt;li&gt;Set Release .1 - .3sec.&lt;/li&gt;
+&lt;li&gt;Set Ratio: 2:1&lt;/li&gt;
+&lt;li&gt;Bring the Threshold down until you have .5 - 1db of gain reduction.&lt;/li&gt;
+&lt;li&gt;Adjust the makeup gain if you feel it&apos;s necessary to restore any lost volume.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Drum Pocket&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Send all your drums to the drum bus/group.&lt;/li&gt;
+&lt;li&gt;Put your desired compressor on the group (SSL Compressor).&lt;/li&gt;
+&lt;li&gt;Set Attack 10 - 30ms.&lt;/li&gt;
+&lt;li&gt;Set Release .1 - .3sec.&lt;/li&gt;
+&lt;li&gt;Set Ratio: 2:1&lt;/li&gt;
+&lt;li&gt;Set your Threshold until you have .5 - 3db of gain reduction.&lt;/li&gt;
+&lt;li&gt;Adjust the makeup gain if you feel it&apos;s necessary to restore any lost volume.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Bass Pocket&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Send all your basses to this bass bus/group.&lt;/li&gt;
+&lt;li&gt;Put your desired compressor on the group (SSL Compressor).&lt;/li&gt;
+&lt;li&gt;Set Attack 10ms.&lt;/li&gt;
+&lt;li&gt;Set Release .1 - .3sec.&lt;/li&gt;
+&lt;li&gt;Set Ratio: 2:1&lt;/li&gt;
+&lt;li&gt;Set upir Threshold down until you have .5 - 1db of gain reduction.&lt;/li&gt;
+&lt;li&gt;Adjust the makeup gain if you feel it&apos;s necessary to restore any lost volume.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Aux Pocket&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Send all Auxiliary sounds; FX to this bus/group.&lt;/li&gt;
+&lt;li&gt;Put your desired compressor on the group (SSL Compressor).&lt;/li&gt;
+&lt;li&gt;Set Attack 1 - 3ms.&lt;/li&gt;
+&lt;li&gt;Set Release .3 - .6sec.&lt;/li&gt;
+&lt;li&gt;Set Ratio: 2:1&lt;/li&gt;
+&lt;li&gt;Bring the Threshold down until you have 1 - 2db of gain reduction.&lt;/li&gt;
+&lt;li&gt;Adjust the makeup gain if you feel it&apos;s necessary to restore any lost volume.&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[THE 3-SPACE REVERB FRAMEWORK]]></title><description><![CDATA[3 reverb types Short-decay reverb Medium-decay reverb Long-decay reverb The longer the decay the more space it takes up. 3-Space Mix Theory…]]></description><link>https://jordanspencerwu.github.io/books/the-3-space-reverb-framework/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/the-3-space-reverb-framework/</guid><pubDate>Wed, 13 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h4&gt;3 reverb types&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Short-decay reverb&lt;/li&gt;
+&lt;li&gt;Medium-decay reverb&lt;/li&gt;
+&lt;li&gt;Long-decay reverb&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The longer the decay the more space it takes up.&lt;/p&gt;
+&lt;h4&gt;3-Space Mix Theory&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Front space&lt;/li&gt;
+&lt;li&gt;Middle space&lt;/li&gt;
+&lt;li&gt;Back space&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4&gt;Blend/Contrast Theory and Reverb&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;Reverbs by default will blend together&lt;/li&gt;
+&lt;li&gt;To create more contrast with reverbs we use numerically different settings between each reverb&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The most important parameters in any reverb are &lt;strong&gt;pre-delay&lt;/strong&gt;, &lt;strong&gt;decay&lt;/strong&gt;, and &lt;strong&gt;hi-cut&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Front Space Categories: Drums, Small Rooms, Studios, Chambers&lt;/p&gt;
+&lt;p&gt;Middle Space Categories: Chambers, Halls, Medium Rooms, Studios&lt;/p&gt;
+&lt;p&gt;Back Space Categories: Chambers, Halls, Cathedrals&lt;/p&gt;
+&lt;p&gt;Mod Depth is the depth of pitch modulation happening within your reverb.&lt;/p&gt;
+&lt;p&gt;Mod Rate is how fast the pitch modulation move up and down.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The higher the mod rate, the less mod depth you can have for the reverb to sound natural.&lt;/li&gt;
+&lt;li&gt;The lower the mod rate, the more mod depth you can have for the reverb to sound natural.&lt;/li&gt;
+&lt;li&gt;A darker reverb will have bass frequencies that last longer relative to the high frequencies.&lt;/li&gt;
+&lt;li&gt;A brighter reverb will have bass frequencies which decay faster relative to high frequencies.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want a darker room then make sure the high frequency content decays faster than your bass frequency content.&lt;/p&gt;
+&lt;p&gt;If you want a brighter room then make sure the low frequency content decays faster than your high frequency content.&lt;/p&gt;
+&lt;p&gt;The front space is created by using short-decay reverbs.&lt;/p&gt;
+&lt;p&gt;The middle space is created by using medium-decay reverbs.&lt;/p&gt;
+&lt;p&gt;The back space is created by using long-decay reverbs.&lt;/p&gt;
+&lt;h4&gt;The Front Space Reverb&lt;/h4&gt;
+&lt;p&gt;Predelay: 1 - 10ms
+Decay: .2 - 1sec
+Hicut: 10k - 20k
+Diffusion: To taste. Low diffusion create a more lively, and echoey drum room. High diffusion creates a smoother drum room.
+Mod Rate/Depth: Mod depth is somewhere between 5 - 20%
+EQ: A drum room&apos;s low frequencies should disappear before its high frequencies&lt;/p&gt;
+&lt;h4&gt;The Middle Space Reverb&lt;/h4&gt;
+&lt;p&gt;Predelay: 10 - 20ms
+Decay: 1 - 2sec
+Hicut: 8k - 15k
+Diffusion: Set to taste
+Mod Rate/Depth: Between 5 - 30%
+EQ: Should complement your long-decay reverb&apos;s EQ in such a way that they give each other space.&lt;/p&gt;
+&lt;h4&gt;The Back Space Reverb&lt;/h4&gt;
+&lt;p&gt;Predelay: 1 - 15ms
+Decay: 2 - 8sec
+Hicut: 5k - 12k
+Diffusion: Usually always at max
+Mod Rate/Depth: Between 15 - 50%
+EQ: Has the most natural bass decay&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MASTERING MULTI-BAND COMPRESSION]]></title><description><![CDATA[A multiband compressor is really just an EQ that has a regular single-band compressor attached to each EQ band. Compression is just a way…]]></description><link>https://jordanspencerwu.github.io/books/mastering-multi-band-compression/</link><guid isPermaLink="false">https://jordanspencerwu.github.io/books/mastering-multi-band-compression/</guid><pubDate>Sat, 09 May 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A multiband compressor is really just an EQ that has a regular single-band compressor attached to each EQ band.&lt;/p&gt;
 &lt;p&gt;Compression is just a way for us to control volume.&lt;/p&gt;
 &lt;p&gt;I want compression for you to mean an Automatic Volume Fader.&lt;/p&gt;
 &lt;h5&gt;The 3 Truths About Compression&lt;/h5&gt;
