@@ -40,7 +40,7 @@ function MusicPlaylistContent(props: MusicPlaylistContentProps): ReactElement {
           {showLoader && <Loader />}
           <iframe
             className={!showLoader ? "active" : ""}
-            src="https://open.spotify.com/embed/playlist/2e2pAMDwIsYVg2zKErmXfd"
+            src="https://open.spotify.com/embed/playlist/6lB8YHgrxBfclqrjbGAVyx"
             allow="encrypted-media"
             onLoad={onLoad}
           ></iframe>
