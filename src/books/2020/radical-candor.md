@@ -6,13 +6,13 @@ seo-description: Radical Candor by Kim Scott notes.
 title: Radical Candor
 ---
 
-at the very heart of being a good boss - is a good relationship.
+At the very heart of being a good boss - is a good relationship.
 
-your key responsibility as a boss: to guide your team to achieve results.
+Your key responsibility as a boss: to guide your team to achieve results.
 
 Bosses guide a team to achieve results.
 
-three areas of responsibility that managers do have: guidance, team-building, and results.
+Three areas of responsibility that managers do have: guidance, team-building, and results.
 
 "Radical Candor" is what happens when you put "Care Personally" and "Challenge Directly" together.
 
@@ -20,4 +20,4 @@ three areas of responsibility that managers do have: guidance, team-building, an
 
 There are two dimensions to good guidance: care personally and challenge directly.
 
-your job is not to provide purpose but instead to get to know each of your direct reports well enough to understand how each one derives meaning from their work.
+Your job is not to provide purpose but instead to get to know each of your direct reports well enough to understand how each one derives meaning from their work.

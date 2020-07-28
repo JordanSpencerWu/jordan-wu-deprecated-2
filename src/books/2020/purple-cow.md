@@ -12,7 +12,7 @@ Something remarkable is worth talking about.
 
 Remarkable marketing is the art of building things worth noticing right into your product or service. Understand that if your offering itself isn't remarkable it's invisible.
 
-it's cheaper to keep an old customer than it is to get a new one.
+It's cheaper to keep an old customer than it is to get a new one.
 
 **CREATE REMARKABLE PRODUCT THAT THE RIGHT PEOPLE SEEK OUT.**
 
@@ -22,10 +22,10 @@ The way you break through to the mainstream is to target a niche instead of a hu
 
 The cow is so rare because people are afraid.
 
-we face two choices: to be invisible, anonymous, uncriticized, and safe, or to take a chance at greatness, uniqueness, and the Cow.
+We face two choices: to be invisible, anonymous, uncriticized, and safe, or to take a chance at greatness, uniqueness, and the Cow.
 
 Being safe is risky.
 
-find the market niche first, and then make the remarkable product.
+Find the market niche first, and then make the remarkable product.
 
 The path to lifetime job security is to be remarkable.

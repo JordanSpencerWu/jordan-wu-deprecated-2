@@ -181,7 +181,7 @@ You have more to fear by boring your targets than by shaking them up.
 
 Wounding people binds them to you more deeply than kindness.
 
-Falling is love means literally falling - losing control, a mis of fear and excitement.
+Falling is love means literally falling - losing control, a mix of fear and excitement.
 
 As a seducer you must find a way to lower people's resistance.
 

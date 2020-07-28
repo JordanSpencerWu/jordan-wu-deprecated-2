@@ -1,7 +1,7 @@
 ---
 author: [Alessandro Cipriani, Maurizio Giri]
 date: 2020-04-28
-description: Currently reading this book.
+description: A great book that teaches you all the components and algorithms used to create a software synthesizer.
 seo-description: Electronic Music and Sound Design by Alessandro Cipriani and Maurizio Giri notes.
 title: Electronic Music and Sound Design - Theory and Practice with Max 7 Volume 1
 ---

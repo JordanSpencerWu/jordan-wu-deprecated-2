@@ -120,7 +120,7 @@ To grow in our ability to love ourselves we need to receive love as well.
 
 On Venus, their motto is "Love is never having to ask!"
 
-It a woman is not asking for support a man assumes he is giving enough.
+If a woman is not asking for support a man assumes he is giving enough.
 
 When a man hears a demanding tone, not matter how nicely you phrase your request, all he hears is that he is not giving enough. His tendency is then to give less until you appreciate what he is already giving.
 
