@@ -1,12 +1,12 @@
 ---
 author: [Sebastian Junger]
 date: 2020-01-03
-description: The book is about what makes us feel human and why modern society has so many mental health issues. It's crazy how natural disasters and wars can bring people together more than our society.
+description: The book is about what makes us feel human and why modern society has created so many mental health issues. It's crazy how natural disasters and wars can bring people together more than our society.
 seo-description: Tribe - on homecoming and belonging by Sebastian Junger notes.
 title: Tribe - On Homecoming and Belonging
 ---
 
-home is the place where, when you have to go there, they have to take you in.
+Home is the place where, when you have to go there, they have to take you in.
 
 First agriculture, and then industry, changed two fundamental things about the human experience. The accumulation of personal property allowed people to make more and more individualistic choices about their lives, and those choices unavoidably diminished group effort toward a common good. And as society modernized, people found themselves able to live independently from any communal group.
 
@@ -30,4 +30,4 @@ definition of community of tribe would be the group of people that you would bot
 
 Acting in a tribal way simply means being willing to make a substantive sacrifice for your community.
 
-true leadership require powerful people to put themselves last.
+True leadership require powerful people to put themselves last.
