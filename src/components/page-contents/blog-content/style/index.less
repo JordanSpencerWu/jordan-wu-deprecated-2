@@ -130,8 +130,17 @@
       }
 
       &-image {
-        height: 80px;
-        width: 80px;
+        height: 100%;
+
+        & img {
+          object-fit: contain !important;
+        }
+      }
+    }
+
+    @media (max-width: @screen-sm) {
+      &-excerpt-sub-heading {
+        display: none;
       }
     }
   }
