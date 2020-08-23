@@ -40,15 +40,6 @@
     }
   }
 
-  @media screen {
-    @media (max-width: @screen-sm) {
-      &-search-container {
-        flex-direction: column;
-        margin-bottom: 25px;
-      }
-    }
-  }
-
   &-info-container {
     position: relative;
     margin-left: 10px;
@@ -62,6 +53,7 @@
 
     & > picture > img {
       object-fit: inherit !important;
+      margin-bottom: 0;
     }
   }
 
@@ -98,6 +90,23 @@
       &-image {
         max-height: 200px;
         max-width: 150px;
+      }
+    }
+  }
+
+  @media screen {
+    @media (max-width: @screen-sm) {
+      &-search-container {
+        flex-direction: column;
+        margin-bottom: 25px;
+      }
+
+      &-book-container {
+        justify-content: center;
+      }
+
+      &-info-container {
+        display: none;
       }
     }
   }
