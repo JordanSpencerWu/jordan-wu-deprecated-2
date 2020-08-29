@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect } from "react"
 import { graphql } from "gatsby"
-import { navigate } from "@reach/router"
 import { useSpring, animated } from "react-spring"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
@@ -20,18 +19,11 @@ export default (props): ReactElement => {
     },
   } = props
 
-  const goBack = () => {
-    navigate(-1)
-  }
-
   return (
     <Layout>
       <SEO title="Blog Post" description={seo_description} />
       <div className="blog-post-container">
         <animated.div style={spring} className="blog-post-content-container">
-          <a onClick={goBack} className="blog-post-back-link">
-            Go back
-          </a>
           <h1>{title}</h1>
           <MDXRenderer>{body}</MDXRenderer>
         </animated.div>

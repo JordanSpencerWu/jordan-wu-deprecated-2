@@ -69,7 +69,14 @@
     font-size: 18px;
     padding: 20px 18px;
     position: absolute;
-    right: 0;
+    
+    &.right {
+      right: 0;
+    }
+
+    &.left {
+      left: 0
+    }
   }
 
   &-icon {
@@ -82,6 +89,10 @@
       &-container {
         justify-content: center;
         position: relative;
+        position: fixed;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+        border-bottom-color: #080b2e;
       }
 
       &-logo {

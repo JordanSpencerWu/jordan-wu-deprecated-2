@@ -19,8 +19,6 @@ type BookContentProps = {
   books: Array<Book>
 }
 
-const ENTER_KEYCODE = 13
-
 function BookContent(props: BookContentProps): ReactElement {
   const [searchTerm, setSeachTerm] = useState(EMPTY_STRING)
   const spring = useSpring({ opacity: 1, from: { opacity: 0 } })

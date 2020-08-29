@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect } from "react"
 import { graphql } from "gatsby"
-import { navigate } from "@reach/router"
 import { useSpring, animated } from "react-spring"
 
 import Layout from "../../components/layout"
@@ -27,18 +26,11 @@ export default (props): ReactElement => {
 
   const authorNames = author.join(SPACE)
 
-  const goBack = () => {
-    navigate(-1)
-  }
-
   return (
     <Layout>
       <SEO title={title} description={seo_description} />
       <div className="book-note-container">
         <animated.div style={spring} className="book-note-content-container">
-          <a onClick={goBack} className="book-note-back-link">
-            Go back
-          </a>
           <h1 className="book-note-title">{title}</h1>
           <small>By {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />

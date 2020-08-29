@@ -1,6 +1,5 @@
 import React, { ReactElement, useEffect } from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
-import { navigate } from "@reach/router"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
@@ -64,10 +63,6 @@ export default (): ReactElement => {
     }
   })
 
-  const goBack = () => {
-    navigate(-1)
-  }
-
   const renderChapters = introToAlgorithmLinks.map(({ slug, name }) => (
     <Link key={name} to={slug}>
       {name.replace("-", SPACE)}
@@ -79,9 +74,6 @@ export default (): ReactElement => {
       <SEO title={title} description={seo_description} />
       <div className="book-note-container">
         <div className="book-note-content-container">
-          <a onClick={goBack} className="blog-post-back-link">
-            Go back
-          </a>
           <h1>{title}</h1>
           <small>{authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
