@@ -6,6 +6,7 @@ import { useSpring, animated } from "react-spring"
 
 import { SPACE, EMPTY_STRING } from "../../../utils/constants"
 import "./style/index.less"
+const CloseIcon = require("../../../images/close.svg")
 
 type Book = {
   author: Array<string>
@@ -22,6 +23,7 @@ type BookContentProps = {
 function BookContent(props: BookContentProps): ReactElement {
   const [searchTerm, setSeachTerm] = useState(EMPTY_STRING)
   const spring = useSpring({ opacity: 1, from: { opacity: 0 } })
+  const hideCloseIcon = searchTerm === ""
 
   const { books } = props
   const search = new Search("slug")
@@ -85,19 +87,24 @@ function BookContent(props: BookContentProps): ReactElement {
   return (
     <section className="book-content-container">
       <div className="book-content-search-container">
-        <label>Search Books by Title or Author</label>
         <input
           type="text"
+          placeholder="Search By Author Or Book"
           value={searchTerm}
           onChange={e => handleChange(e)}
           onKeyPress={e => handleSearchPress(e)}
         />
+        <div className={hideCloseIcon ? "hidden" : "visible"}>
+          <CloseIcon onClick={() => setSeachTerm("")} />
+        </div>
       </div>
       {renderBooks.length > 0 ? (
         renderBooks
       ) : (
         <div>
-          <p>{`Sorry could not find the book with title or author of ${searchTerm}.`}</p>
+          <p
+            style={{ margin: "0 16px" }}
+          >{`Sorry could not find the book with title or author of ${searchTerm}.`}</p>
         </div>
       )}
     </section>

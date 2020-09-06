@@ -27,16 +27,42 @@
   }
 
   &-search-container {
+    height: 40px;
     display: flex;
-    margin-bottom: 15px;
-
-    & > label {
-      font-size: 24px;
-      margin-right: 10px;
-    }
+    justify-content: center;
+    background-color: transparent;
+    margin-bottom: 16px;
+    padding: 0 16px;
+    border-radius: 20px;
+    border: 2px solid @active-nav-color;
 
     & > input {
-      border-width: 1px;
+      background-color: transparent;
+      border-style: none;
+      outline: none;
+      min-width: 206px;
+      color: @active-nav-color;
+    }
+
+    & > div {
+      display: flex;
+      align-items: center;
+      margin-left: 8px;
+      opacity: 0;
+
+      &.visible {
+        opacity: 1;
+        transition: opacity 0.2s;
+      }
+
+      &.hidden {
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+
+      & path {
+        fill: @active-nav-color;
+      }
     }
   }
 
@@ -96,11 +122,6 @@
 
   @media screen {
     @media (max-width: @screen-sm) {
-      &-search-container {
-        flex-direction: column;
-        margin-bottom: 25px;
-      }
-
       &-book-container {
         justify-content: center;
       }

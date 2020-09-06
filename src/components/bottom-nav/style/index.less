@@ -41,17 +41,21 @@
     z-index: 5;
 
     & > small {
-      padding-top: 6px;
+      padding-top: 4px;
+      font-size: 10px;
     }
 
     &.active {
       border-top-style: solid;
       border-top-width: 1.5px;
       color: @active-nav-color;
-      font-weight: 200;
 
       & > svg {
         fill: @active-nav-color;
+      }
+
+      & > small {
+        font-size: 12px;
       }
     }
 

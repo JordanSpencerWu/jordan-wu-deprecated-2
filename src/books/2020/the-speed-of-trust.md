@@ -68,7 +68,7 @@ Integrity also includes the courage to do the right thing - even when it's hard.
 
 #### How to increase Integrity:
 
-1. Make and keep commitments yourself
+1. Make and keep commitments to yourself
 2. Stand for something
 3. Be open
 
@@ -120,7 +120,7 @@ We need to constantly improve our capabilities.
 
 #### How to increase your capabilities:
 
-1. Run with your strengths (and with your purpose)
+1. Run with your strengths and with your purpose
 2. Keep yourself relevant
 3. Know where you're going
 
@@ -154,12 +154,12 @@ You can behave yourself into the kind of person you want to be.
 
 #### Trust accounts:
 
-* Each trust account is unique
-* All deposits and withdrawals are not created equal
-* What constitutes a "deposit" to one person may not to another
-* Withdrawals are typically larger than deposits
-* Sometimes the fastest way to build trust is to stop making withdrawals
-* Recognize that each relationship has two trust accounts
+- Each trust account is unique
+- All deposits and withdrawals are not created equal
+- What constitutes a "deposit" to one person may not to another
+- Withdrawals are typically larger than deposits
+- Sometimes the fastest way to build trust is to stop making withdrawals
+- Recognize that each relationship has two trust accounts
 
 Keep in mind that every interaction with every person is a "moment of trust". The way you behave in that moment will either build or diminish trust.
 
@@ -249,7 +249,7 @@ Extend trust abundantly to those who have earned your trust.
 
 Extend trust conditionally to those who are earning your trust.
 
-### THE THIRD WAVE - ORGANIZATIONAL TRUST:  The Principle of Alignment
+### THE THIRD WAVE - ORGANIZATIONAL TRUST: The Principle of Alignment
 
 It's about designing and aligning systems that promote trust.
 
