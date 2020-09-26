@@ -12,12 +12,10 @@ export default (): ReactElement => {
       html,
       frontmatter: { author, seo_description, title },
     },
-    allMarkdownRemark: { edges: electronicMusicAndSoundDesignNodes },
+    allMarkdownRemark: { edges: synthSecretsNodes },
   } = useStaticQuery(graphql`
     query {
-      markdownRemark(
-        fields: { slug: { eq: "/books/electronic-music-and-sound-design/" } }
-      ) {
+      markdownRemark(fields: { slug: { eq: "/books/synth-secrets/" } }) {
         html
         frontmatter {
           author
@@ -29,9 +27,8 @@ export default (): ReactElement => {
       allMarkdownRemark(
         filter: {
           fields: { sourceInstanceName: { eq: "books" } }
-          fileAbsolutePath: { regex: "/electronic-music-and-sound-design/.*/" }
+          fileAbsolutePath: { regex: "/synth-secrets/.*/" }
         }
-        sort: { fields: frontmatter___title }
       ) {
         edges {
           node {
@@ -49,27 +46,23 @@ export default (): ReactElement => {
   `)
 
   const authorNames = author.join(SPACE)
-  const electronicMusicAndSoundDesignLinks = electronicMusicAndSoundDesignNodes.map(
-    ({ node }) => {
-      const {
-        fields: { slug },
-        frontmatter: { title },
-      } = node
+  const synthSecretsLinks = synthSecretsNodes.map(({ node }) => {
+    const {
+      fields: { slug },
+      frontmatter: { title },
+    } = node
 
-      return {
-        slug,
-        title,
-      }
+    return {
+      slug,
+      title,
     }
-  )
+  })
 
-  const renderChapters = electronicMusicAndSoundDesignLinks.map(
-    ({ slug, title }) => (
-      <Link key={slug} to={slug}>
-        {title}
-      </Link>
-    )
-  )
+  const renderParts = synthSecretsLinks.map(({ slug, title }) => (
+    <Link key={slug} to={slug}>
+      {title}
+    </Link>
+  ))
 
   return (
     <Layout>
@@ -79,8 +72,8 @@ export default (): ReactElement => {
           <h1>{title}</h1>
           <small>by {authorNames}</small>
           <div dangerouslySetInnerHTML={{ __html: html }} />
-          <h3>Chapters</h3>
-          {renderChapters}
+          <h3>Parts</h3>
+          {renderParts}
         </div>
       </div>
     </Layout>

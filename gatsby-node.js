@@ -10,8 +10,9 @@ const GATSBY_FILE_SYSTEM_NAMES = {
 
 const RELATIVE_DIRECTORIES = {
   codeComplete: "2016/code-complete",
-  introToAlgorithms: "2016/introduction-to-algorithms",
   electronicMusicAndSoundDesign: "2020/electronic-music-and-sound-design",
+  introToAlgorithms: "2016/introduction-to-algorithms",
+  synthSecrets: "2020/synth-secrets",
 }
 
 async function createPages({ graphql, actions, getNode }) {
@@ -121,6 +122,17 @@ async function createPages({ graphql, actions, getNode }) {
               path: slug,
               component: path.resolve(
                 `./src/templates/book-note/electronic-music-and-sound-design.tsx`
+              ),
+              context: {
+                slug: slug,
+              },
+            })
+            break
+          case `synth-secrets`:
+            createPage({
+              path: slug,
+              component: path.resolve(
+                `./src/templates/book-note/synth-secrets.tsx`
               ),
               context: {
                 slug: slug,
@@ -249,6 +261,8 @@ function getBookSlug(name, relativeDirectory) {
       return `/books/introduction-to-algorithms/${name}/`
     case RELATIVE_DIRECTORIES.electronicMusicAndSoundDesign:
       return `/books/electronic-music-and-sound-design/${name}/`
+    case RELATIVE_DIRECTORIES.synthSecrets:
+      return `/books/synth-secrets/${name}/`
     default:
       return `/books/${name}/`
   }
