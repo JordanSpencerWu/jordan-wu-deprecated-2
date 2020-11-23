@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: An Introduction To Additive Synthesis
+part: 14
 seo-description: An Introduction To Additive Synthesis
 title: An Introduction To Additive Synthesis
 ---

@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: The Physics Of Percussion
+part: 2
 seo-description: The Physics Of Percussion
 title: The Physics Of Percussion
 ---

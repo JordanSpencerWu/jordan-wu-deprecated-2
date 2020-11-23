@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: An Introduction To ESPs & Vocoders
+part: 15
 seo-description: An Introduction To ESPs & Vocoders
 title: An Introduction To ESPs & Vocoders
 ---

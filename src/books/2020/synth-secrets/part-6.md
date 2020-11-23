@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: Of Responses & Resonance
+part: 6
 seo-description: Of Responses & Resonance
 title: Of Responses & Resonance
 ---

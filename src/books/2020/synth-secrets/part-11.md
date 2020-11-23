@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: Amplitude Modulation
+part: 11
 seo-description: Amplitude Modulation
 title: Amplitude Modulation
 ---

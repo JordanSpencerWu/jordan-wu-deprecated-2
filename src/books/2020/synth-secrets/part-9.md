@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: An Introduction To VCAs
+part: 9
 seo-description: An Introduction To VCAs
 title: An Introduction To VCAs
 ---

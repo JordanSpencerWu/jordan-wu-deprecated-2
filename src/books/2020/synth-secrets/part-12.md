@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: An Introduction To Frequency Modulation
+part: 12
 seo-description: An Introduction To Frequency Modulation
 title: An Introduction To Frequency Modulation
 ---

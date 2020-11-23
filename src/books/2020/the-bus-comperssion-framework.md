@@ -71,7 +71,7 @@ Back Pocket = Faster Attack and Slower Release
 3. Set Attack 10ms.
 4. Set Release .1 - .3sec.
 5. Set Ratio: 2:1
-6. Set upir Threshold down until you have .5 - 1db of gain reduction.
+6. Set your Threshold down until you have .5 - 1db of gain reduction.
 7. Adjust the makeup gain if you feel it's necessary to restore any lost volume.
 
 #### Aux Pocket

@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-10-03
 description: From Springs, Plates & Buckets To Physical Modelling
+part: 22
 seo-description: From Springs, Plates & Buckets To Physical Modelling
 title: From Springs, Plates & Buckets To Physical Modelling
 ---

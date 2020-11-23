@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: Envelopes, Gates & Triggers
+part: 7
 seo-description: Envelopes, Gates & Triggers
 title: Envelopes, Gates & Triggers
 ---

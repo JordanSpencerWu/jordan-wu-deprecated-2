@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: Modifiers & Controllers
+part: 3
 seo-description: Modifiers & Controllers
 title: Modifiers & Controllers
 ---

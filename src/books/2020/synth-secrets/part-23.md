@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-10-03
 description: Formant Synthesis
+part: 23
 seo-description: Formant Synthesis
 title: Formant Synthesis
 ---

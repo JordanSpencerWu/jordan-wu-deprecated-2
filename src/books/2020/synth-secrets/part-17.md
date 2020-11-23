@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-28
 description: From Sample & Hold To Sample-rate Converters (2)
+part: 17
 seo-description: From Sample & Hold To Sample-rate Converters (2)
 title: From Sample & Hold To Sample-rate Converters (2)
 ---

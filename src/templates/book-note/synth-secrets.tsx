@@ -23,12 +23,12 @@ export default (): ReactElement => {
           title
         }
       }
-
       allMarkdownRemark(
         filter: {
           fields: { sourceInstanceName: { eq: "books" } }
           fileAbsolutePath: { regex: "/synth-secrets/.*/" }
         }
+        sort: { fields: frontmatter___part, order: ASC }
       ) {
         edges {
           node {

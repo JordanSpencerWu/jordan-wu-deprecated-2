@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-10-03
 description: Priorities & Triggers
+part: 18
 seo-description: Priorities & Triggers
 title: Priorities & Triggers
 ---

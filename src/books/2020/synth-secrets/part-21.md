@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-10-03
 description: From Polyphony To Digital Synths
+part: 21
 seo-description: From Polyphony To Digital Synths
 title: From Polyphony To Digital Synths
 ---

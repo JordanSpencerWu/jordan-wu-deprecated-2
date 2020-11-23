@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: More About Envelopes
+part: 8
 seo-description: More About Envelopes
 title: More About Envelopes
 ---

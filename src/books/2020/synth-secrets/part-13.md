@@ -2,6 +2,7 @@
 author: [Gordon Reid]
 date: 2020-09-26
 description: More On Frequency Modulation
+part: 13
 seo-description: More On Frequency Modulation
 title: More On Frequency Modulation
 ---
