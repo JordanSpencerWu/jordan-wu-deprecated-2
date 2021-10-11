@@ -21,9 +21,9 @@ function MusicPlaylistContent(props: MusicPlaylistContentProps): ReactElement {
         setTimerDone(true)
         clearTimeout(timeout)
       }
-
-      return () => clearTimeout(timeout)
     }, 1000)
+
+    return () => clearTimeout(timeout)
   }, [loadTimer])
 
   const onLoad = () => {

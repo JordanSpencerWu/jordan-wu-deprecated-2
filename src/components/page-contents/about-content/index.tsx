@@ -2,9 +2,9 @@ import React, { ReactElement, memo } from "react"
 
 import "./style/index.less"
 
-type ResumeContentProps = {}
+type AboutContentProps = {}
 
-function ResumeContent(props: ResumeContentProps): ReactElement {
+function AboutContent(props: AboutContentProps): ReactElement {
   return (
     <div className="about-content-container">
       <div className="about-content-context-container">
@@ -29,4 +29,4 @@ function ResumeContent(props: ResumeContentProps): ReactElement {
   )
 }
 
-export default memo(ResumeContent)
+export default memo(AboutContent)

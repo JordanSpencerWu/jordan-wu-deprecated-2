@@ -5,6 +5,7 @@ const GATSBY_FILE_SYSTEM_NAMES = {
   books: "books",
   customPages: "custom-pages",
   images: "images",
+  myMission: "my-mission",
   pages: "pages",
 }
 
@@ -221,6 +222,10 @@ function onCreateNode({ node, getNode, actions }) {
       case GATSBY_FILE_SYSTEM_NAMES.books:
         slug = getBookSlug(name, relativeDirectory)
         sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.books
+        break
+      case GATSBY_FILE_SYSTEM_NAMES.myMission:
+        slug = "/my-mission"
+        sourceInstanceNameValue = GATSBY_FILE_SYSTEM_NAMES.myMission
         break
       default:
         break

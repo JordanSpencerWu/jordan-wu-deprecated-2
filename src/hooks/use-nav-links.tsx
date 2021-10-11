@@ -3,13 +3,8 @@ import { FileSystemNode } from "gatsby-source-filesystem"
 
 import { SPACE } from "../utils/constants"
 
-const MENU_LINKS_ORDER = [
-  "home",
-  "blog",
-  "book-list",
-  "music-playlist",
-  "about",
-]
+const MENU_LINKS_ORDER = ["home", "blog", "music-playlist", "about"]
+const SHOW_PAGE_NAMES = ["about", "blog", "index", "music-playlist"]
 
 export type NavLinkProps = {
   name?: string
@@ -38,7 +33,7 @@ export const useNavLinks = (): Array<NavLinkProps> => {
   const navLinks = allPagesNodes
     .map(getPageName)
     .sort(comparePageNames)
-    .filter(pageName => pageName !== "book-list")
+    .filter(pageName => SHOW_PAGE_NAMES.includes(pageName))
     .map(getNavLink)
     .filter(Boolean)
 
