@@ -64,7 +64,7 @@ It's about transactional to transformational.
 
 Between stimulus and response, man has the freedom to choose.
 
-The habit of proactivity. Tt means that as human beings, we are responsible for our own lives.
+The habit of proactivity. It means that as human beings, we are responsible for our own lives.
 
 Responsibility - the ability to choose your response.
 
@@ -78,9 +78,9 @@ By working on ourselves instead of worrying about conditions, we were able to in
 
 The problems we face fall in one of three areas: direct control problems involving our own behavior; indirect control problems involving other people's behavior; or no control problems we can do nothing about, such as our past or situational realities.
 
-Direct control problems (problems involving our own behavior) are solved by working on our habits. These are the "Private Victories" of Habit 1, 2, and 3.
+Direct control problems problems involving our own behavior are solved by working on our habits. These are the "Private Victories" of Habit 1, 2, and 3.
 
-Indirect control problems (problems involving other people's behavior) are solved by changing our methods of influence. These are the "Public Victories" of Habit 4, 5, and 6.
+Indirect control problems problems involving other people's behavior are solved by changing our methods of influence. These are the "Public Victories" of Habit 4, 5, and 6.
 
 Proactive people focus their efforts in the Circle of Influence. They work on the things they can do something about.
 
@@ -120,7 +120,7 @@ There's two parts, personal leadership first creation and management second crea
 
 I can change. I can live out of my imagination instead of my memory. I can tie myself to my limitless potential instead of my limiting past. I can become my own first creator.
 
-Develop a personal mission statement focusing on what you want to be (character) and to do (contributions and achievements).
+Develop a personal mission statement focusing on what you want to be **character** and to do **contributions and achievements**.
 
 The key to the ability to change is changeless sense of who you are, what you are about and what you value.
 
@@ -146,7 +146,7 @@ Time management: organize and execute around priorities.
 
 Time management has two factors that define an activity are urgent and important.
 
-Quadrant II (not urgent but important) is the heart of effective personal management.
+Quadrant II not urgent but important is the heart of effective personal management.
 
 80 precent of the results flow out of 20 percent of the activities.
 

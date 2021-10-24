@@ -234,3 +234,35 @@ Once you have seduced a person there is almost always a lull, a slight letdown, 
 Revive the old images, the symbols, the expressions that will stir memory.
 
 Never see a separation or sacrifice as final. With a little drama and planning, a victim can be retaken in no time.
+
+#### Playbook
+
+Attraction comes before seduction.
+
+Attraction is not a choice.
+
+Leader of men. When you lead the men, the woman will follow.
+
+Convey lack of interest. As you demonstrate value and an utter lack of neediness, she will start to open up to you.
+
+She must become invested in this interaction, and then rapport must be established. Attraction is useful to bait her into investing.
+
+When she demonstrates value in an attempt to win you over, reward her with indicator of interest, then bait her again as the process repeats.
+
+They want a man who can keep it real. A girl needs to feel that she is getting to know the real you and that takes time.
+
+The security she feels from being with a strong man is a primary factor in her unconscious sexual selection strategy.
+
+A woman will almost always choose the man with higher value and a stronger frame. The only factor that counteracts this phenomenon is her level of investment in you.
+
+You are the prize, you are the one being chased, and you decide whether this will go to the next level and the next phase.
+
+The idea is to get her hoping that she's good enough to quality for you.
+
+Be natural and confident when touching, touching is one way that alpha males like you demonstrate their dominance.
+
+Comfort is not only trust and time; it is also compliance.
+
+The compliance threshold is the point of the interaction where she realizes that she has more fun if she complies.
+
+The game is played in comfort.
