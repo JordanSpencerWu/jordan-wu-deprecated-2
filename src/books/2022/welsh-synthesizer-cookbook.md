@@ -21,7 +21,6 @@ The process of adding sine waves together to create sounds is known as additive 
 Subtractive synthesis is simply additive synthesis in reverse.
 
 Sounds created by synthesizer are referred to as patches.
-
 A waveform's usefulness lies with the harmonics that make it up and is NOT inherent to the shape of the waveform.
 
 Using two oscillator gives more control over the harmonic makeup of the final sound.
