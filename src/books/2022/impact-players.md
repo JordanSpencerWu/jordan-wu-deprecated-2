@@ -6,7 +6,7 @@ seo-description: Impact players - How to take the lead, play bigger, and multipl
 title: Impact Players - How to Take the Lead. Play Bigger, and Multiply Your Impact
 ---
 
-most people want a good job, buy they also want to make a meaningful contribution; they want their work to matter and to make a difference in the world.
+most people want a good job, but they also want to make a meaningful contribution; they want their work to matter and to make a difference in the world.
 
 a leader's behavior can either increase or diminish someone's ability to contribute.
 
