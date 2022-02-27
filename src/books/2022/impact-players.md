@@ -150,7 +150,7 @@ Create an environment of both safety and stretch in which individuals feel safe 
 
 ## Five High Impact Coaching Habits
 
-1. Define the W.I.N (What's Important Now)
+1. Define the W.I.N - What's Important Now
 2. Redefine leadership
 3. Ask them to stay until the job is done
 4. Critique the work not the person
