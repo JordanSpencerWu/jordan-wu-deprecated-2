@@ -24,7 +24,7 @@ export default (props): ReactElement => {
     window.MathJax && window.MathJax.Hub.Queue(["Typeset", window.MathJax.Hub])
   })
 
-  const authorNames = author.join(SPACE)
+  const authorNames = author.join(`, `)
 
   return (
     <Layout>
