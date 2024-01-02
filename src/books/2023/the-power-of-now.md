@@ -233,7 +233,7 @@ You teach through being, through demonstrating the peace of God.
 
 True change happens within
 
-"Love you enemies."
+"Love your enemies."
 
 "have no enemies."
 
@@ -244,12 +244,13 @@ primary focus, the teaching of enlightenment your main purpose, and peace your m
 Practice surrender in your everyday life.
 
 The quality of your consciousness at this moment is the main determinant of what kind of future you will experience.
-Lean from nature
+
+Learn from nature
 
 only through the letting go of resistance, through becoming "vulnerable," can you discover your true and essential, invulnerability.
 Surrender is inner acceptance of what is.
 
-your Life, you very Being in the timeless Now.
+your Life, your very Being in the timeless Now.
 
 Surrender transform you
 
