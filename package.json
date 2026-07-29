@@ -19,7 +19,7 @@
     }
   },
   "dependencies": {
-    "gatsby": "^2.19.45",
+    "gatsby": "^5.16.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -46,7 +46,7 @@
     "gatsby-remark-mathjax": "^1.0.0",
     "gatsby-remark-prismjs": "^3.4.0",
     "gatsby-source-filesystem": "^2.2.1",
-    "gatsby-transformer-remark": "^2.7.0",
+    "gatsby-transformer-remark": "^6.16.0",
     "gatsby-transformer-sharp": "^2.4.2",
     "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
